@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Working with Records - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.1-feasability-studies/" class="nav-link">Feasibility Studies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.10-gant-charts/" class="nav-link">1.10 gant charts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.2-project-planning/" class="nav-link">1.2 project planning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.3-requirement-specifications/" class="nav-link">Requirement Specifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.4-uml/" class="nav-link">Unified Modelling Language (UML)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.1-parallel-1d-arrays/" class="nav-link">Parrllel 1D Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.3-arrays-of-records/" class="nav-link">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.4-2d-arrays/" class="nav-link">2d Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.5-arrays-of-objects/" class="nav-link">Arrays of Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.1-objects/" class="nav-link">Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.3-sub-class/" class="nav-link">Subclasses and Inheritance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.4-encapsulation/" class="nav-link">Encapsulation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.5-polymorphism/" class="nav-link">Polymorphism</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.6-complete-working-example/" class="nav-link">Complete Working Example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../5.1-sqlite-with-python/" class="nav-link">SQLite with Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.1-binary-search/" class="nav-link">Binary Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.2-insertation-sort/" class="nav-link">Insertion Sort</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.3-bubble-sort/" class="nav-link">6.3 bubble sort</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../3.1-parallel-1d-arrays/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../3.3-arrays-of-records/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#working-with-records" class="nav-link">Working with Records</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#explanation" class="nav-link">Explanation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#record-structures" class="nav-link">Record Structures</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#creating-a-single-record-structure" class="nav-link">Creating a Single Record Structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="working-with-records">Working with Records</h1>
+<p>!!! info "What you need to know"</p>
+<pre><code>You must be able to describe, exemplify and implement records
+</code></pre>
+<h2 id="explanation">Explanation</h2>
+<p>So far, we’ve used only one type of data structure to store multiple values: the array. </p>
+<p>Remember, an array is like a list of related variables that all share the same data type. For example, an array could store a list of numbers or a list of names, but not both.</p>
+<p>While arrays can only hold one type of data, records allow us to store different types of data together in a single structure. For example, one record can store a name (string), an age (integer), and a status (Boolean) all in one place.</p>
+<p>Just like in a database, records help us organize related information more efficiently.</p>
+<p>By using records, we can keep all related data about a single person or object together in one structure, and we can use real-world names for each category (called fields) to make the data easier to understand and manage. </p>
+<p><strong>This is especially useful because most systems we work with, like databases, organize data in this way.</strong></p>
+<h2 id="record-structures">Record Structures</h2>
+<p>A record structure is like creating your own custom data type. </p>
+<p>As a programmer, you define a record with a name that represents something real, like "Student" or "Product" and specify different categories (fields) for storing information. </p>
+<p>Each field has a name and a specific data type (e.g., string, integer, Boolean), so the program knows how to store and handle each piece of data. </p>
+<p>This way, when the program creates actual records, it knows exactly what kind of information to expect in each field.</p>
+<h2 id="creating-a-single-record-structure">Creating a Single Record Structure</h2>
+<h3 id="part-one">Part One</h3>
+<p>=== "Python"</p>
+<pre><code>``` python linenums="1"
+from dataclasses import dataclass
+
+@dataclass
+```
+</code></pre>
+<p>=== "Explanation"</p>
+<pre><code>__Line 1 - from dataclasses import Dataclass__
+This line is like getting a special helper from a toolbox. It brings in something called dataclass, which makes it easier to create a class that stores information.
+
+__Line 3 - @dataclass__
+This is a special tag that tells Python, "I want to make the next class a dataclass." This means Python will automatically help us with things like creating the class and keeping track of data inside it.
+</code></pre>
+<h3 id="part-two">Part Two</h3>
+<p>=== "Python"</p>
+<pre><code>``` python linenums="1"
+    from dataclasses import dataclass
+
+    @dataclass
+
+    class SchoolReg:
+        Name : str = ""
+        Age : int = 0
+        Reg : str = ""
+```
+</code></pre>
+<p>=== "Explanation"</p>
+<pre><code>__Line 5 - class SchoolReg__
+Here, we are creating a class called SchoolReg. A class is like a blueprint or recipe. In this case, it helps us create something to store information about a school registration, like a student's name, age, and registration number.
+
+__Line 6 - Name: str = ""__
+Inside the class, we create a variable called Name. This will hold the student's name, and it's a string, which means it's a word or group of letters (like "Peter"). The empty quotes " " mean that we are starting with no name yet.
+
+__Line 7 - Age: int = 0__
+This is another variable called Age. It will hold the student's age, and it's an integer (which means a whole number like 17). Right now, we start it at 0.
+
+__Line 8 - Reg: str = ""__
+This variable is called Reg, which stands for "registration number." It’s also a string (a group of letters or numbers). At first, it's an empty string "", but we will fill it in later.
+</code></pre>
+<h3 id="part-three">Part Three</h3>
+<p>=== "Python"</p>
+<pre><code>``` python linenums="1"
+    from dataclasses import dataclass
+
+    @dataclass
+
+    class SchoolReg:
+        Name : str = ""
+        Age : int = 0
+        Reg : str = ""
+
+    pupilRecord = SchoolReg()
+    pupilRecord.Name = "Peter"
+    pupilRecord.Age = 17
+    pupilRecord.Reg = "r1"
+```
+</code></pre>
+<p>=== "Explanation"</p>
+<pre><code>__Line 10 -  pupilRecord = SchoolReg()__
+Now we create an object called pupilRecord from the SchoolReg class. Think of the class as a cookie cutter, and this object is a cookie made from it. This object will store a student's name, age, and registration number.
+
+__Line 11 - pupilRecord.Name = "Peter"__
+Here, we set the Name of the pupilRecord object to "Peter". Before it was empty (""), but now it's filled with the name "Peter".
+
+__Line 12 - pupilRecord.Age = 17__
+Next, we set the Age for pupilRecord to 17. Before, it was 0, but now we know Peter is 17 years old.
+
+__Line 13 - pupilRecord.Reg = "r1"_
+Here, we set the registration number (Reg) to "r1". Now, the student Peter has a registration number "r1".
+</code></pre>
+<h3 id="part-four">Part Four</h3>
+<p>=== "Python"</p>
+<pre><code>``` python linenums="1"
+    from dataclasses import dataclass
+
+    @dataclass
+
+    class SchoolReg:
+        Name : str = ""
+        Age : int = 0
+        Reg : str = ""
+
+    pupilRecord = SchoolReg()
+    pupilRecord.Name = "Peter"
+    pupilRecord.Age = 17
+    pupilRecord.Reg = "r1"
+
+    print (pupilRecord.Name) 
+    print (pupilRecord.Age) 
+    print (pupilRecord.Reg) 
+```
+</code></pre>
+<p>=== "Explanation"</p>
+<pre><code>__Line 15 - print(pupilRecord.Name)__
+This line tells the computer to print (show) the name of the student, which is "Peter". The computer will display "Peter" on the screen.
+
+__Line 16 - print(pupilRecord.Age)__
+This prints the student's age, which is 17. The computer will show 17 on the screen.
+
+__Line 17 - print(pupilRecord.Reg)__
+Finally, this prints the student's registration number, which is "r1". The computer will show "r1".
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

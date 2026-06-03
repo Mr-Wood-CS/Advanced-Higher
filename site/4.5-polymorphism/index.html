@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Polymorphism - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.1-feasability-studies/" class="nav-link">Feasibility Studies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.10-gant-charts/" class="nav-link">1.10 gant charts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.2-project-planning/" class="nav-link">1.2 project planning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.3-requirement-specifications/" class="nav-link">Requirement Specifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.4-uml/" class="nav-link">Unified Modelling Language (UML)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.1-parallel-1d-arrays/" class="nav-link">Parrllel 1D Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.2-records/" class="nav-link">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.3-arrays-of-records/" class="nav-link">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.4-2d-arrays/" class="nav-link">2d Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.5-arrays-of-objects/" class="nav-link">Arrays of Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.1-objects/" class="nav-link">Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.3-sub-class/" class="nav-link">Subclasses and Inheritance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.4-encapsulation/" class="nav-link">Encapsulation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Polymorphism</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.6-complete-working-example/" class="nav-link">Complete Working Example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../5.1-sqlite-with-python/" class="nav-link">SQLite with Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.1-binary-search/" class="nav-link">Binary Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.2-insertation-sort/" class="nav-link">Insertion Sort</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.3-bubble-sort/" class="nav-link">6.3 bubble sort</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../4.4-encapsulation/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../4.6-complete-working-example/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#polymorphism" class="nav-link">Polymorphism</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-polymorphism" class="nav-link">What is Polymorphism?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#why-is-polymorphism-useful" class="nav-link">Why is Polymorphism Useful?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#polymorphism-through-inheritance" class="nav-link">Polymorphism Through Inheritance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#calling-the-same-method" class="nav-link">Calling the Same Method</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#using-polymorphism-with-arrays-of-objects" class="nav-link">Using Polymorphism with Arrays of Objects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#school-register-example" class="nav-link">School Register Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#relationship-between-inheritance-and-polymorphism" class="nav-link">Relationship Between Inheritance and Polymorphism</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#advantages-of-polymorphism" class="nav-link">Advantages of Polymorphism</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#common-mistakes" class="nav-link">Common Mistakes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#summary" class="nav-link">Summary</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="polymorphism">Polymorphism</h1>
+<h2 id="what-is-polymorphism">What is Polymorphism?</h2>
+<p>Polymorphism is an object-oriented programming (OOP) concept that allows the same method name to behave differently depending on the object that is using it.</p>
+<p>The word polymorphism means "many forms".</p>
+<p>This allows different classes to respond to the same method call in different ways.</p>
+<hr />
+<h2 id="why-is-polymorphism-useful">Why is Polymorphism Useful?</h2>
+<p>Polymorphism helps programmers to:</p>
+<ul>
+<li>Reuse code</li>
+<li>Reduce duplication</li>
+<li>Write more flexible programs</li>
+<li>Make systems easier to extend</li>
+<li>Work with groups of related objects</li>
+</ul>
+<hr />
+<h2 id="polymorphism-through-inheritance">Polymorphism Through Inheritance</h2>
+<p>Polymorphism is commonly used alongside inheritance.</p>
+<p>Different subclasses can provide their own version of the same method.</p>
+<h3 id="superclass">Superclass</h3>
+<p>```python linenums="1"
+class Person:</p>
+<pre><code>def display_details(self):
+    print("Person details")
+</code></pre>
+<pre><code>
+### Subclasses
+
+```python linenums=&quot;1&quot;
+class Pupil(Person):
+
+    def display_details(self):
+        print(&quot;Pupil details&quot;)
+
+class Teacher(Person):
+
+    def display_details(self):
+        print(&quot;Teacher details&quot;)
+</code></pre>
+<p>Both subclasses contain a method called display_details(), but each behaves differently.</p>
+<hr />
+<h2 id="calling-the-same-method">Calling the Same Method</h2>
+<p>```python linenums="1"
+pupil1 = Pupil()
+teacher1 = Teacher()</p>
+<p>pupil1.display_details()
+teacher1.display_details()</p>
+<pre><code>
+Output:
+
+```text
+Pupil details
+Teacher details
+</code></pre>
+<p>The same method name is used, but different behaviour occurs depending on the object.</p>
+<p>This is polymorphism.</p>
+<hr />
+<h2 id="using-polymorphism-with-arrays-of-objects">Using Polymorphism with Arrays of Objects</h2>
+<p>One of the biggest advantages of polymorphism is that different objects can be processed using the same code.</p>
+<p>```python linenums="1"
+people = [Pupil(), Teacher()]</p>
+<p>for person in people:
+    person.display_details()</p>
+<pre><code>
+Output:
+
+```text
+Pupil details
+Teacher details
+</code></pre>
+<p>The program does not need to know whether the object is a Pupil or a Teacher.</p>
+<p>It simply calls the display_details() method.</p>
+<hr />
+<h2 id="school-register-example">School Register Example</h2>
+<h3 id="superclass_1">Superclass</h3>
+<p>```python linenums="1"
+class Person:</p>
+<pre><code>def display_details(self):
+    pass
+</code></pre>
+<pre><code>
+### Subclasses
+
+```python linenums=&quot;1&quot;
+class Pupil(Person):
+
+    def display_details(self):
+        print(&quot;Pupil details&quot;)
+
+class Teacher(Person):
+
+    def display_details(self):
+        print(&quot;Teacher details&quot;)
+</code></pre>
+<h3 id="using-polymorphism">Using Polymorphism</h3>
+<p>```python linenums="1"
+people = [Pupil(), Teacher()]</p>
+<p>for person in people:
+    person.display_details()</p>
+<pre><code>
+Output:
+
+```text
+Pupil details
+Teacher details
+</code></pre>
+<p>Although the same method is called, each object performs its own version of the action.</p>
+<hr />
+<h2 id="relationship-between-inheritance-and-polymorphism">Relationship Between Inheritance and Polymorphism</h2>
+<p>Inheritance creates the relationship between classes.</p>
+<p>Polymorphism allows those related classes to respond differently to the same method call.</p>
+<pre><code class="language-text">          Person
+             ▲
+             |
+      ----------------
+      |              |
+    Pupil         Teacher
+
+Both subclasses implement:
+
+display_details()
+</code></pre>
+<p>Inheritance provides the structure.</p>
+<p>Polymorphism provides the different behaviour.</p>
+<hr />
+<h2 id="advantages-of-polymorphism">Advantages of Polymorphism</h2>
+<table>
+<thead>
+<tr>
+<th>Advantage</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reusability</td>
+<td>The same code can work with different objects</td>
+</tr>
+<tr>
+<td>Flexibility</td>
+<td>New subclasses can be added easily</td>
+</tr>
+<tr>
+<td>Maintainability</td>
+<td>Less duplicated code is required</td>
+</tr>
+<tr>
+<td>Extensibility</td>
+<td>Systems can be expanded without major changes</td>
+</tr>
+<tr>
+<td>Simplicity</td>
+<td>One method call can work with many object types</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="common-mistakes">Common Mistakes</h2>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Confusing inheritance with polymorphism</td>
+<td>Inheritance creates the relationship; polymorphism creates different behaviour</td>
+</tr>
+<tr>
+<td>Creating different method names</td>
+<td>Polymorphism requires the same method name</td>
+</tr>
+<tr>
+<td>Forgetting to override the method</td>
+<td>Subclasses should provide their own implementation</td>
+</tr>
+<tr>
+<td>Not using a common superclass</td>
+<td>Polymorphism is usually based on inheritance</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>Polymorphism allows different objects to respond differently to the same method call.</p>
+<p>It is commonly used with inheritance and method overriding.</p>
+<p>Benefits include:</p>
+<ul>
+<li>Greater flexibility</li>
+<li>Better code reuse</li>
+<li>Easier maintenance</li>
+<li>More scalable software systems</li>
+</ul>
+<p>Polymorphism is one of the core principles of object-oriented programming alongside classes, objects, inheritance and encapsulation.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

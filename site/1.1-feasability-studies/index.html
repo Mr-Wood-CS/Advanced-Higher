@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Feasibility Studies - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Feasibility Studies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.10-gant-charts/" class="nav-link">1.10 gant charts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.2-project-planning/" class="nav-link">1.2 project planning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.3-requirement-specifications/" class="nav-link">Requirement Specifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.4-uml/" class="nav-link">Unified Modelling Language (UML)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.1-parallel-1d-arrays/" class="nav-link">Parrllel 1D Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.2-records/" class="nav-link">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.3-arrays-of-records/" class="nav-link">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.4-2d-arrays/" class="nav-link">2d Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.5-arrays-of-objects/" class="nav-link">Arrays of Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.1-objects/" class="nav-link">Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.3-sub-class/" class="nav-link">Subclasses and Inheritance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.4-encapsulation/" class="nav-link">Encapsulation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.5-polymorphism/" class="nav-link">Polymorphism</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.6-complete-working-example/" class="nav-link">Complete Working Example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../5.1-sqlite-with-python/" class="nav-link">SQLite with Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.1-binary-search/" class="nav-link">Binary Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.2-insertation-sort/" class="nav-link">Insertion Sort</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.3-bubble-sort/" class="nav-link">6.3 bubble sort</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../1.10-gant-charts/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#feasibility-studies" class="nav-link">Feasibility Studies</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#feasibility-studies_1" class="nav-link">Feasibility Studies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#summary-of-feasibility-studies" class="nav-link">Summary of Feasibility Studies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="feasibility-studies">Feasibility Studies</h1>
+<p>!!! info "What you Need to Know"</p>
+<pre><code>Describe, exemplify, and implement research for:
+
+* feasibility studies:
+    * economic
+    * time
+    * legal
+    * technical
+    * user surveys
+</code></pre>
+<p>Before starting a new system, it’s important to decide if it’s worth the time and money. </p>
+<p>This is where a <strong>feasibility study</strong> comes in as it helps determine:</p>
+<ul>
+<li>Is the project realistic?</li>
+<li>Can it be achieved within time and budget?</li>
+<li>Will it meet the goals set in the <strong>problem definition</strong>?</li>
+</ul>
+<p>A feasibility study should:</p>
+<ul>
+<li>
+<p>Be low-cost and quick to complete</p>
+</li>
+<li>
+<p>Involve <strong>no legal commitment</strong> to proceed</p>
+</li>
+<li>
+<p>Suggest <strong>options or alternatives</strong></p>
+</li>
+<li>
+<p>End with a clear report for the client, showing:</p>
+<ul>
+<li>Costs</li>
+<li>Benefits</li>
+<li>Possible solutions</li>
+<li>Recommendations</li>
+</ul>
+</li>
+</ul>
+<p>!!! info "Key Points"</p>
+<pre><code>* The feasibility study should be conducted relatively cheaply and within a fairly short time frame.
+
+* There are no legal or contractual requirements at this stage.
+
+* The findings of the feasibility study are presented to the client in the form of a report.
+
+* This report indicates costs, benefits, alternatives and appropriate recommendations.
+</code></pre>
+<h2 id="feasibility-studies_1">Feasibility Studies</h2>
+<p>A feasibility study should look at the following five main areas:</p>
+<h3 id="economic-feasibility">Economic Feasibility</h3>
+<p>!!! info "💷 What is Economic Feasibility?"</p>
+<pre><code>Economic Feasibility deals with the cost implications involved.
+
+Management will want to know how much each option will cost, what is affordable within the company’s budget and what they get for their money.
+
+Economic feasibility asks:
+
+:   __Can we afford this system, and is it worth it?__
+
+A system is economically feasible if:
+
+:   * Its __benefits outweigh the costs__
+
+    * It reaches __break-even__ within a realistic timeframe
+
+__Example__:
+
+:   A school wants a new timetable system. If the software costs £10,000 but saves £15,000 in admin time over a year, then it’s economically feasible.
+</code></pre>
+<h4 id="cost-benefit-analysis">Cost-Benefit Analysis</h4>
+<p>A cost-benefit-analysis is part of the budgetary feasibility study. </p>
+<p>If the project is not cost-effective then there is no point proceeding. Setting up a new computer system is an investment and involves capital outlay. </p>
+<p>The costs of a new system include:</p>
+<ul>
+<li>
+<p>the costs of acquiring it in the first place (consultancy fees, program development including cost of any resources required for development, etc.)</p>
+</li>
+<li>
+<p>the costs of installing it (disruption of current operations, cost of new equipment, alteration of workplace, etc.)</p>
+</li>
+<li>
+<p>the costs of maintaining it which also includes training. </p>
+</li>
+</ul>
+<figure markdown="span">
+![Pie chart showing cost breakdown: Development, Installation, Maintenance/Training](Images/Example_Cost_Breakdown.png){ width="600" }
+</figure>
+
+<p>In the long term, management will also want to know the ‘break-even point’ when the new system stops costing money and starts to make money. </p>
+<figure markdown="span">
+![Break-even chart showing cost vs. time and when profits begin](Images/Cost_Benefit_Chart.png)
+</figure>
+
+<p>!!! warning "Economic Feasibility is Difficult to Estimate"</p>
+<pre><code>It's often difficult to accurately calculate future costs and benefits.
+
+Estimations depend heavily on the __expertise and experience of the systems analyst__.
+</code></pre>
+<p>Once the system begins to generate value, it's important to distinguish the types of benefits it brings. These can be divided into two categories: tangible(<strong>something you can see, touch, or easily quantify</strong>) and intangible(<strong>something that is not easily measured or quantified</strong>).</p>
+<p>Benefits generated by a system can be tangible or intangible, as shown below: </p>
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th>Tangible Benefits</th>
+<th>Intangible Benefits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reduced running costs</td>
+<td>Improved staff morale</td>
+</tr>
+<tr>
+<td>Increased operational speed</td>
+<td>Better customer perception</td>
+</tr>
+<tr>
+<td>Increased throughput</td>
+<td>Easier communication</td>
+</tr>
+<tr>
+<td>Better reporting facilities</td>
+<td>Increased job satisfaction</td>
+</tr>
+</tbody>
+</table>
+<p>🚨 Note: <strong>Not all the costs and benefits lend themselves to direct measurement</strong>. 
+</center>
+!!! info "Key Points"</p>
+<pre><code>* The client will want to know the cost of each option and what they get for their money.
+
+*  A system is only economically feasible if the benefits of the development outweigh the costs. For this reason a cost benefit analysis is carried out.
+</code></pre>
+<h3 id="time-feasibility">Time Feasibility</h3>
+<p>!!! info "⏱️ What is Time Feasibility?"</p>
+<pre><code>__Time feasibility asks__:  
+:   Can the system be developed and implemented within the available time, and will it be ready when it is needed?
+
+__It considers__:
+
+:   The time needed for development, installation, and training
+
+    The effect on the client’s schedule or operations
+
+__Example__
+
+:   A school wants to install a new report-writing system in time for the October break. If development, testing, and training will take 4 months and it’s already July, the project may __not be time feasible__.
+</code></pre>
+<p>If the project can be completed <strong>within a realistic timeframe</strong> and without disrupting important business operations, it is considered <strong>time feasible</strong>.</p>
+<h4 id="factors-that-affect-time-feasibility">Factors That Affect Time Feasibility</h4>
+<ul>
+<li>Total time required for system development  </li>
+<li>Client’s calendar — busy periods, deadlines, seasonal events  </li>
+<li>When installation and training can take place  </li>
+<li>When the system must be fully operational  </li>
+<li>Availability of staff and resources  </li>
+</ul>
+<h4 id="questions-to-ask">Questions to Ask</h4>
+<ul>
+<li>How long will the system take to develop?</li>
+<li>When is the least disruptive time to install it?</li>
+<li>Will it be ready by the required date?</li>
+</ul>
+<p>🚨 Note: A system can be <strong>technically</strong> and <strong>economically</strong> feasible but <strong>still not time feasible</strong> if it won’t be finished in time to be useful. Delays can make the system pointless or even harmful to the organisation.</p>
+<p>!!! info "Key Points"</p>
+<pre><code>* Time feasibility focuses on __scheduling and deadlines__
+
+*  A system must be ready __when the client needs it__.
+
+*  Development, training, and installation must fit within the timeline.
+
+*  Failing to meet the deadline can make the system __unusable__, even if it works perfectly
+</code></pre>
+<h3 id="legal-feasibility">Legal Feasibility</h3>
+<p>Legal feasibility is about ensuring the proposed system complies with all relevant laws and regulations. Organisations must assess any legal risks that may arise from developing, deploying, or using the system.</p>
+<p>!!! abstract "⚖️ What is Legal Feasibility?"</p>
+<pre><code>Legal feasibility considers whether the new system complies with relevant laws and regulations, including:
+
+- **Contracts and liability:** Will the system change responsibilities under existing contracts?
+- **Health and safety:** Will it meet workplace and digital safety standards?
+- **Data protection laws (e.g. GDPR):** Will it handle personal data legally and securely?
+- **International regulations:** Will it comply with laws in other countries where users or data may reside (e.g. EU, USA)?
+- **Software licensing:** Are appropriate licenses available and affordable?
+</code></pre>
+<p>!!! info "Software Licensing Considerations"</p>
+<pre><code>Software licensing can be complex and must be carefully checked. The organisation must ensure that:
+
+- The right type of licence is used:
+  - **Client licence (per seat)**
+  - **Server licence**
+  - **Network licence**
+  - **Site licence**
+
+- The licence duration is appropriate:
+  - **Annual subscription**
+  - **Perpetual (one-off) purchase**
+
+Different vendors have different rules, so licensing terms should be verified before proceeding.
+</code></pre>
+<h3 id="technical-feasibility">Technical Feasibility</h3>
+<p>Technical feasibility examines whether the proposed system can be developed and implemented using available technology, hardware, and expertise. It helps identify whether the organisation has the technical capability or needs additional resources.</p>
+<p>!!! abstract "🖥️ What is Technical Feasibility?"</p>
+<pre><code>Technical feasibility assesses whether the system can be built and run using the organisation’s current or accessible technology. It includes:
+
+- **Required hardware and software**: Are the necessary tools available or affordable?
+- **Technical skills**: Do staff or developers have the expertise to implement and maintain the system?
+- **Integration**: Can the new system work with existing systems?
+- **Support and maintenance**: Are updates, patches, and technical support available?
+- **Hardware specifications**: Are existing devices powerful enough?
+- **Network capacity**: Can the network cope with the new system?
+- **Storage requirements**: Is sufficient storage available?
+- **Software compatibility**: Will the new system work with existing software?
+</code></pre>
+<p>!!! info "Example"</p>
+<pre><code>If a school wants to run a new multimedia learning platform but only has outdated computers, the system may not be technically feasible unless upgrades are made.
+</code></pre>
+<h3 id="user-surveys">User Surveys</h3>
+<p>In addition to the feasibility study, surveys and questionnaires help gather feedback from users, especially when many opinions are needed. This helps ensure the system meets real needs.</p>
+<p>!!! abstract "📋 What is a User Study?"</p>
+<pre><code>User feasibility ensures that the proposed solution aligns with user expectations and requirements, which is essential for the project's success. It helps determine:
+
+- **User needs**: Will the system actually solve the users’ problems?
+- **Ease of use**: Is the system user-friendly and intuitive?
+- **User acceptance**: Are users willing to adopt the system?
+- **Usability challenges**: Are there barriers that could prevent adoption?
+
+Here's why user feasibility is important:
+- It **identifies potential roadblocks** early, such as usability issues or resistance to change, allowing adjustments to the design or implementation plan.
+- It ensures the project **addresses real user needs**, increasing its relevance and value.
+- It improves the overall **user experience** by considering preferences and behaviours.
+- It **increases adoption rates** – if users find the system easy to use and beneficial, they're more likely to embrace it.
+
+In short, user feasibility isn't just a nice-to-have – it's essential for determining whether a project is practical, usable, and likely to succeed.
+</code></pre>
+<blockquote>
+<p>For example, a new library system would be developed following some time spent capturing the experience of existing librarians and how they operate.</p>
+</blockquote>
+<h4 id="methods-of-gathering-user-information">Methods of Gathering User Information</h4>
+<p>Common methods include:</p>
+<ul>
+<li>Questionnaires and surveys</li>
+<li>Interviews</li>
+<li>Observation</li>
+<li>Focus groups</li>
+</ul>
+<p>Different methods provide different types of information and are often used together during a feasibility study.</p>
+<p>The users of a particular program are often best placed to identify problems and suggest improvements based on real experience. If the system is brand new, the target user group should still understand the domain well enough to provide useful input.</p>
+<p>When the opinion of a number of users is required, it is often easier to create a survey or questionnaire which will capture the information that the project team require.</p>
+<p><strong>Example</strong>:<br />
+A college developing a new library system might survey librarians to ask what features they need most.</p>
+<h2 id="summary-of-feasibility-studies">Summary of Feasibility Studies</h2>
+<table>
+<thead>
+<tr>
+<th>Feasibility Type</th>
+<th>Main Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Economic</td>
+<td>Can we afford it?</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>Can it be completed on time?</td>
+</tr>
+<tr>
+<td>Legal</td>
+<td>Does it comply with the law?</td>
+</tr>
+<tr>
+<td>Technical</td>
+<td>Do we have the technology and expertise?</td>
+</tr>
+<tr>
+<td>User Surveys</td>
+<td>Do users want and support the solution?</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

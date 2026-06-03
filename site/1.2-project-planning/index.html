@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>1.2 project planning - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.1-feasability-studies/" class="nav-link">Feasibility Studies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.10-gant-charts/" class="nav-link">1.10 gant charts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">1.2 project planning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.3-requirement-specifications/" class="nav-link">Requirement Specifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.4-uml/" class="nav-link">Unified Modelling Language (UML)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.1-parallel-1d-arrays/" class="nav-link">Parrllel 1D Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.2-records/" class="nav-link">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.3-arrays-of-records/" class="nav-link">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.4-2d-arrays/" class="nav-link">2d Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.5-arrays-of-objects/" class="nav-link">Arrays of Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.1-objects/" class="nav-link">Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.3-sub-class/" class="nav-link">Subclasses and Inheritance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.4-encapsulation/" class="nav-link">Encapsulation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.5-polymorphism/" class="nav-link">Polymorphism</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.6-complete-working-example/" class="nav-link">Complete Working Example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../5.1-sqlite-with-python/" class="nav-link">SQLite with Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.1-binary-search/" class="nav-link">Binary Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.2-insertation-sort/" class="nav-link">Insertion Sort</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.3-bubble-sort/" class="nav-link">6.3 bubble sort</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../1.10-gant-charts/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../1.3-requirement-specifications/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-project-management" class="nav-link">What is Project Management?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-in-a-project-plan" class="nav-link">What is in a project plan?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#tasks-and-deadlines" class="nav-link">Tasks and Deadlines</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#dependencies" class="nav-link">Dependencies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#scheduling" class="nav-link">Scheduling</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#gantt-charts" class="nav-link">Gantt Charts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#critical-path-analysis" class="nav-link">Critical Path Analysis</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#resources-and-scheduling" class="nav-link">Resources and Scheduling</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><file name=0 path=/Applications/XAMPP/xamppfiles/htdocs/advanced-higher/docs/1.2-project-planning.md># Project Management</p>
+<div class="grid cards" markdown>
+
+- :simple-youtube: [**AH Analysis** - Gantt Charts](https://youtu.be/hHprwKs0JJc?si=890LCZedw4m01W_M){:target="_blank"}
+
+</div>
+
+<h2 id="what-is-project-management">What is Project Management?</h2>
+<p>Project management is the process of planning, organising, scheduling and monitoring a project to ensure it is completed successfully.</p>
+<p>Effective project management helps ensure that:</p>
+<ul>
+<li>Deadlines are met</li>
+<li>Resources are used efficiently</li>
+<li>Progress can be monitored</li>
+<li>Problems can be identified early</li>
+<li>The project remains within its planned timescale and budget</li>
+</ul>
+<h2 id="what-is-in-a-project-plan">What is in a project plan?</h2>
+<p>The primary aspects of a project plan are:</p>
+<ol>
+<li>Tasks/Subtasks</li>
+<li>Identify Timescales</li>
+<li>Gantt Chart</li>
+<li>Identify Budget/Resources</li>
+</ol>
+<h2 id="tasks-and-deadlines">Tasks and Deadlines</h2>
+<p>A project should be broken down into an appropriate set of tasks. Tasks should be broken down into sub tasks. Once subtasks are identified timescales and deadlines will have to be assigned - people work more effectively to deadlines.</p>
+<p>Advantages of sub tasks:</p>
+<ol>
+<li>Concurrent processes can be identified,</li>
+<li>Indication of % complete/tracking progress,</li>
+<li>Allow identification of the dependency of tasks on the completion of others.</li>
+<li>Critical Path Analysis</li>
+<li>Delegation of responsibility for subtasks</li>
+</ol>
+<h3 id="concurrent-tasks">Concurrent Tasks</h3>
+<p>Concurrent tasks are tasks that can be carried out at the same time because they do not depend on each other being completed first.</p>
+<p>Identifying concurrent tasks can reduce the overall duration of a project and make better use of available resources.</p>
+<h2 id="dependencies">Dependencies</h2>
+<p>If a task has a relationship with another task then there may be a dependency between the tasks:</p>
+<p>==Finish to Start:== Activity A must finish before Activity B can begin</p>
+<p><code>Example</code></p>
+<blockquote>
+<p>A : Foundations Dug</p>
+<p>B : Concrete Poured</p>
+</blockquote>
+<p>==Finish to Finish:== Activity A must be complete before activity B can finish</p>
+<p><code>Example</code></p>
+<blockquote>
+<p>A : Last chapter written </p>
+<p>B (Entire book written)</p>
+</blockquote>
+<p>==Start to Start:== <code>Activity B</code> can only start after <code>Activity A</code> has started</p>
+<p>==Start to Finish:== <code>Activity B</code> cannot finish before <code>Activity A</code> has finished</p>
+<p><code>Example</code></p>
+<blockquote>
+<p>A : New shift started</p>
+<p>B Previous Shift finish</p>
+</blockquote>
+<h2 id="scheduling">Scheduling</h2>
+<p>Scheduling is the process of allocating tasks to specific time periods and determining when work should be carried out.</p>
+<p>A schedule helps project managers to:</p>
+<ul>
+<li>Estimate project completion dates</li>
+<li>Allocate resources effectively</li>
+<li>Identify task dependencies</li>
+<li>Monitor progress</li>
+<li>Identify potential delays before they become major problems</li>
+</ul>
+<p>When creating a schedule, project managers should consider:</p>
+<ul>
+<li>Task durations</li>
+<li>Dependencies between tasks</li>
+<li>Resource availability</li>
+<li>Deadlines and milestones</li>
+<li>Concurrent tasks</li>
+</ul>
+<p>Gantt charts are commonly used to represent project schedules visually.</p>
+<h2 id="gantt-charts">Gantt Charts</h2>
+<p>Gannt Charts are diagrams used to represent the scheduling of tasks and sub tasks along with start and completion dates. </p>
+<p>An example is shown below:</p>
+<figure markdown="span">
+![Gannt Charts](Images/Gannt1.png){ width="700" }
+<figcaption></figcaption>
+</figure>
+
+<h2 id="critical-path-analysis">Critical Path Analysis</h2>
+<p>Critical path analysis identifies all tasks that must be complete and their minimum time length. </p>
+<p>An extension to any of these tasks would result in the delay of completion of the entire project. </p>
+<p>The sample of the Gantt chart below shows that certain tasks have been pattern shaded as they are in the critical path.</p>
+<p>This shows that if any of these tasks take any extra time then that will delay the completion time of the project.</p>
+<p>Some of the other tasks will have some slippage time, that is they can run over by some time without the project completion time changing.</p>
+<figure markdown="span">
+![Critical Path Analysis](Images/Gannt2.png){ width="700" }
+<figcaption></figcaption>
+</figure>
+
+<h2 id="resources-and-scheduling">Resources and Scheduling</h2>
+<p>Resources can include access to development tools and end users.</p>
+<p>These could be:
+* Personnel - particularly those with specific skill sets
+* Physical resources/money/software</p>
+<p>Some of these could be available at any time, while others may only be available at certain times. </p>
+<ul>
+<li>You need to plan to ensure that your project is not held up waiting for resources.</li>
+<li>Timings should allow for holidays, or other events that affect how much time you can spend on your project.</li>
+</ul>
+<p>The tab below in the Gantt project shows the demand placed on particular resources, in this instance they are personnel but resources could be physical resources such as hardware/rooms.</p>
+<figure markdown="span">
+![Resources and Scheduling](Images/Gannt3.png){ width="700" }
+<figcaption></figcaption>
+</figure>
+<p></file></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

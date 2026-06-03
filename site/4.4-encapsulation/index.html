@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Encapsulation - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.1-feasability-studies/" class="nav-link">Feasibility Studies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.10-gant-charts/" class="nav-link">1.10 gant charts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.2-project-planning/" class="nav-link">1.2 project planning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.3-requirement-specifications/" class="nav-link">Requirement Specifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../1.4-uml/" class="nav-link">Unified Modelling Language (UML)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.1-parallel-1d-arrays/" class="nav-link">Parrllel 1D Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.2-records/" class="nav-link">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.3-arrays-of-records/" class="nav-link">Working with Records</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.4-2d-arrays/" class="nav-link">2d Arrays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../3.5-arrays-of-objects/" class="nav-link">Arrays of Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.1-objects/" class="nav-link">Objects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.3-sub-class/" class="nav-link">Subclasses and Inheritance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Encapsulation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.5-polymorphism/" class="nav-link">Polymorphism</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../4.6-complete-working-example/" class="nav-link">Complete Working Example</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../5.1-sqlite-with-python/" class="nav-link">SQLite with Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.1-binary-search/" class="nav-link">Binary Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.2-insertation-sort/" class="nav-link">Insertion Sort</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../6.3-bubble-sort/" class="nav-link">6.3 bubble sort</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../4.3-sub-class/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../4.5-polymorphism/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#encapsulation" class="nav-link">Encapsulation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-encapsulation" class="nav-link">What is Encapsulation?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#why-is-encapsulation-important" class="nav-link">Why is Encapsulation Important?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#encapsulation-in-a-class" class="nav-link">Encapsulation in a Class</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#using-methods-to-access-data" class="nav-link">Using Methods to Access Data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#preventing-invalid-data" class="nav-link">Preventing Invalid Data</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#encapsulation-and-objects" class="nav-link">Encapsulation and Objects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#complete-working-example" class="nav-link">Complete Working Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#advantages-of-encapsulation" class="nav-link">Advantages of Encapsulation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#summary" class="nav-link">Summary</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="encapsulation">Encapsulation</h1>
+<h2 id="what-is-encapsulation">What is Encapsulation?</h2>
+<p>Encapsulation is an object-oriented programming (OOP) principle that combines data and the methods that operate on that data into a single unit called an object.</p>
+<p>Encapsulation also helps protect data by controlling how it can be accessed and modified.</p>
+<p>This helps to maintain the integrity of the data stored within an object.</p>
+<hr />
+<h2 id="why-is-encapsulation-important">Why is Encapsulation Important?</h2>
+<p>Encapsulation helps programmers to:</p>
+<ul>
+<li>Protect data from accidental modification</li>
+<li>Control how data is accessed</li>
+<li>Improve program security</li>
+<li>Reduce errors</li>
+<li>Make programs easier to maintain</li>
+</ul>
+<p>By controlling access to data, objects can ensure that only valid values are stored.</p>
+<hr />
+<h2 id="encapsulation-in-a-class">Encapsulation in a Class</h2>
+<p>A class contains:</p>
+<ul>
+<li>Properties (data)</li>
+<li>Methods (behaviour)</li>
+</ul>
+<p>These are grouped together inside the object.</p>
+<p>```python linenums="1"
+class Pupil:</p>
+<pre><code>def __init__(self, name, year_group):
+    self.name = name
+    self.year_group = year_group
+    self.attendance = 0
+
+def set_attendance(self, attendance):
+    self.attendance = attendance
+</code></pre>
+<pre><code>
+The data and methods are encapsulated within the Pupil object.
+
+---
+
+## Restricting Access to Data
+
+In many object-oriented languages, properties can be made private so that they cannot be accessed directly from outside the class.
+
+This ensures that data can only be changed using approved methods.
+
+### Example
+
+```python linenums=&quot;1&quot;
+class Pupil:
+
+    def __init__(self, name, year_group):
+        self.name = name
+        self.year_group = year_group
+        self.__attendance = 0
+</code></pre>
+<p>The double underscore indicates that attendance should be treated as a private property.</p>
+<hr />
+<h2 id="using-methods-to-access-data">Using Methods to Access Data</h2>
+<p>Instead of changing data directly, methods can be used.</p>
+<p>```python linenums="1"
+class Pupil:</p>
+<pre><code>def __init__(self, name, year_group):
+    self.name = name
+    self.year_group = year_group
+    self.__attendance = 0
+
+def set_attendance(self, attendance):
+    self.__attendance = attendance
+
+def get_attendance(self):
+    return self.__attendance
+</code></pre>
+<pre><code>
+Creating an object:
+
+```python linenums=&quot;1&quot;
+pupil1 = Pupil(&quot;Alice&quot;, 6)
+
+pupil1.set_attendance(95)
+
+print(pupil1.get_attendance())
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">95
+</code></pre>
+<hr />
+<h2 id="preventing-invalid-data">Preventing Invalid Data</h2>
+<p>Encapsulation allows validation to be built into methods.</p>
+<p>```python linenums="1"
+class Pupil:</p>
+<pre><code>def __init__(self, name, year_group):
+    self.name = name
+    self.year_group = year_group
+    self.__attendance = 0
+
+def set_attendance(self, attendance):
+    if 0 &lt;= attendance &lt;= 100:
+        self.__attendance = attendance
+</code></pre>
+<pre><code>
+The validation ensures that attendance cannot be less than 0 or greater than 100.
+
+Without encapsulation, invalid values could be stored accidentally.
+
+---
+
+## School Register Example
+
+Consider a school register program.
+
+A pupil's attendance percentage should never be greater than 100.
+
+```python linenums=&quot;1&quot;
+class Pupil:
+
+    def __init__(self, name, year_group):
+        self.name = name
+        self.year_group = year_group
+        self.__attendance = 0
+
+    def set_attendance(self, attendance):
+        if 0 &lt;= attendance &lt;= 100:
+            self.__attendance = attendance
+</code></pre>
+<p>The validation protects the data from invalid values.</p>
+<hr />
+<h2 id="encapsulation-and-objects">Encapsulation and Objects</h2>
+<p>Encapsulation means that an object is responsible for managing its own data.</p>
+<p>Rather than allowing external code to change properties directly, methods provide controlled access to the data.</p>
+<p>This helps keep objects reliable and self-contained.</p>
+<hr />
+<h2 id="complete-working-example">Complete Working Example</h2>
+<p>```python linenums="1"
+class Person:</p>
+<pre><code>def __init__(self, name):
+    self.name = name
+</code></pre>
+<p>class Pupil(Person):</p>
+<pre><code>def __init__(self, name, year_group):
+    super().__init__(name)
+    self.year_group = year_group
+    self.__attendance = 0
+
+def set_attendance(self, attendance):
+    if 0 &lt;= attendance &lt;= 100:
+        self.__attendance = attendance
+    else:
+        print("Attendance must be between 0 and 100")
+
+def get_attendance(self):
+    return self.__attendance
+
+def display_details(self):
+    print("Pupil:", self.name)
+    print("Year group:", self.year_group)
+    print("Attendance:", str(self.__attendance) + "%")
+</code></pre>
+<p>pupil1 = Pupil("Alice", 6)</p>
+<p>pupil1.set_attendance(95)
+pupil1.display_details()</p>
+<p>pupil1.set_attendance(120)
+print("Stored attendance:", str(pupil1.get_attendance()) + "%")</p>
+<pre><code>
+Output:
+
+```text
+Pupil: Alice
+Year group: 6
+Attendance: 95%
+Attendance must be between 0 and 100
+Stored attendance: 95%
+</code></pre>
+<hr />
+<h2 id="advantages-of-encapsulation">Advantages of Encapsulation</h2>
+<table>
+<thead>
+<tr>
+<th>Advantage</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Protection</td>
+<td>Prevents accidental modification of data</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>Ensures only valid values are stored</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Restricts access to sensitive information</td>
+</tr>
+<tr>
+<td>Maintainability</td>
+<td>Makes programs easier to update</td>
+</tr>
+<tr>
+<td>Reliability</td>
+<td>Reduces the chance of errors</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>Encapsulation is the process of combining data and methods within an object while controlling access to that data.</p>
+<p>Encapsulation helps:</p>
+<ul>
+<li>Protect data</li>
+<li>Validate input</li>
+<li>Improve reliability</li>
+<li>Improve maintainability</li>
+</ul>
+<p>It is a fundamental principle of object-oriented programming and is commonly used alongside classes, objects and inheritance.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
