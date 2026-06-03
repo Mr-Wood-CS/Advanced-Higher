@@ -26,6 +26,8 @@ nav:
           - Binary Search: '6.1-binary-search.md'
           - Insertation Sort: '6.2-insertation-sort.md'
           - Bubble Sort: '6.3-bubble-sort.md'
+    - Project:
+      - Description of the Problem: '7.1-description-of-the-problem.md'
         
       
 markdown_extensions:
