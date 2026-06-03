@@ -1,29 +1,32 @@
-site_name: Unit 1 - Software Design and Development
+site_name: Advanced Higher Computer Science
 
 nav:
-    #- Home: 'index.md'
-    - Analysis: 
-      - Feasability Studies: '1.1-feasability-studies.md'
-      - Project Planning: '1.2-project-planning.md'
-      - Requirement Specifications: '1.3-requirement-specifications.md'
-      - Unified Modelling Language (UML): 1.4-uml.md
-    - Arrays and Records: 
-      - Parrallel Arrays: '3.1-parallel-1d-arrays.md'
-      - Records: '3.2-records.md'
-      - Arrays of Records: '3.3-arrays-of-records.md'
-      - 2d Arrays: '3.4-2d-arrays.md'
-    - Object Orientated Programming:
-      - Object: '4.1-objects.md'
-      - Arrays of Objects: '3.5-arrays-of-objects.md'
-      - Sub-classes: '4.3-sub-class.md'
-      - Encapsulation: '4.4-encapsulation.md'
-      - Polymorphism: '4.5-polymorphism.md'
-      - Example: '4.6-complete-working-example.md'
-    - SQL and Python: '5.1-sqlite-with-python.md'
-    - Searches and Sorts:
-      - Binary Search: '6.1-binary-search.md'
-      - Insertation Sort: '6.2-insertation-sort.md'
-      - Bubble Sort: '6.3-bubble-sort.md'
+    - Home: 'index.md'
+    - Software Design and Development:
+      - Analysis:
+        - Feasability Studies: '1.1-feasability-studies.md'
+        - Project Planning: '1.2-project-planning.md'
+        - Requirement Specifications: '1.3-requirement-specifications.md'
+        - Unified Modelling Language (UML): 1.4-uml.md
+      - Implementation:
+        - Arrays and Records:
+          - Parrallel Arrays: '3.1-parallel-1d-arrays.md'
+          - Records: '3.2-records.md'
+          - Arrays of Records: '3.3-arrays-of-records.md'
+          - 2d Arrays: '3.4-2d-arrays.md'
+        - Object Orientated Programming:
+          - Object: '4.1-objects.md'
+          - Arrays of Objects: '3.5-arrays-of-objects.md'
+          - Sub-classes: '4.3-sub-class.md'
+          - Encapsulation: '4.4-encapsulation.md'
+          - Polymorphism: '4.5-polymorphism.md'
+          - Example: '4.6-complete-working-example.md'
+        - SQL and Python: '5.1-sqlite-with-python.md'
+        - Searches and Sorts:
+          - Binary Search: '6.1-binary-search.md'
+          - Insertation Sort: '6.2-insertation-sort.md'
+          - Bubble Sort: '6.3-bubble-sort.md'
+        
       
 markdown_extensions:
       - admonition
