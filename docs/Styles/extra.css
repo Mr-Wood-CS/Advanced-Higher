@@ -1,0 +1,91 @@
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px; /* Adjust to your preferred roundness */
+  max-width: 800px;      /* Set to your preferred width */
+  
+}
+
+a.back-button.md-button {
+  position: fixed;
+  top: 5rem;
+  left: 1rem;
+  z-index: 9999;
+  background: transparent;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+  text-decoration: none;
+}
+
+a.back-button.md-button:focus,
+a.back-button.md-button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+a.back-button.md-button:hover {
+  background: transparent !important;
+  color: inherit; /* Optional: keep text color unchanged */
+  box-shadow: none !important;
+}
+
+.admonition-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.admonition-container .admonition {
+  flex: 1;
+  min-width: 300px; /* Optional: Controls how small each can shrink */
+}
+
+.custom-inline-nav {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.custom-inline-nav a {
+  text-decoration: none;
+  color: var(--md-primary-fg-color); /* uses your theme’s primary link color */
+  margin: 0 0.5rem;
+}
+
+.custom-inline-nav a:hover {
+  text-decoration: underline;
+}
+
+.md-typeset .tabbed-set {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+
+
+
+
+.testing {
+  border-collapse: collapse; /* neat borders */
+  width: 80%;                /* make table a bit wider */
+  margin: 20px auto;          /* center the table */
+ 
+  border: 2px solid;
+}
+
+.testing th,
+.testing td {
+  border: 1px solid #333; /* borders for each cell */
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.testing th {
+  background-color: orange; /* header background */
+  color: black;             /* header text */
+}
