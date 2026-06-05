@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="950" viewBox="0 0 1500 950">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#222"/>
+    </marker>
+    <marker id="triangle" markerWidth="14" markerHeight="14" refX="12" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="white" stroke="#222" stroke-width="1.5"/>
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #222; stroke-width: 2; rx: 20; }
+      .actorText { font-family: Arial, sans-serif; font-size: 24px; text-anchor: middle; fill: #111; }
+      .smallText { font-family: Arial, sans-serif; font-size: 18px; text-anchor: middle; fill: #111; }
+      .label { font-family: Arial, sans-serif; font-size: 20px; text-anchor: middle; fill: #111; }
+      .title { font-family: Arial, sans-serif; font-size: 32px; font-weight: bold; text-anchor: middle; fill: #111; }
+      .system { fill: #f8f8f8; stroke: #222; stroke-width: 2.5; }
+      .line { stroke: #222; stroke-width: 2; fill: none; }
+      .dash { stroke: #222; stroke-width: 2; fill: none; stroke-dasharray: 8 6; marker-end: url(#arrow); }
+      .gen { stroke: #222; stroke-width: 2; fill: none; marker-end: url(#triangle); }
+    </style>
+  </defs>
+
+  <text x="750" y="45" class="title">Swimming Portal Use Case Diagram</text>
+
+  <!-- system boundary -->
+  <rect x="340" y="90" width="820" height="780" class="system"/>
+  <text x="750" y="125" class="label">Swimming Portal</text>
+
+  <!-- Actors -->
+  <g id="user">
+    <circle cx="170" cy="220" r="28" fill="white" stroke="#222" stroke-width="2"/>
+    <line x1="170" y1="248" x2="170" y2="315" class="line"/>
+    <line x1="125" y1="275" x2="215" y2="275" class="line"/>
+    <line x1="170" y1="315" x2="130" y2="370" class="line"/>
+    <line x1="170" y1="315" x2="210" y2="370" class="line"/>
+    <text x="170" y="405" class="actorText">User</text>
+  </g>
+
+  <g id="coach">
+    <circle cx="80" cy="545" r="28" fill="white" stroke="#222" stroke-width="2"/>
+    <line x1="80" y1="573" x2="80" y2="640" class="line"/>
+    <line x1="35" y1="600" x2="125" y2="600" class="line"/>
+    <line x1="80" y1="640" x2="40" y2="695" class="line"/>
+    <line x1="80" y1="640" x2="120" y2="695" class="line"/>
+    <text x="80" y="730" class="actorText">Coach</text>
+    <text x="80" y="758" class="smallText">(Avril)</text>
+  </g>
+
+  <g id="swimmer">
+    <circle cx="260" cy="545" r="28" fill="white" stroke="#222" stroke-width="2"/>
+    <line x1="260" y1="573" x2="260" y2="640" class="line"/>
+    <line x1="215" y1="600" x2="305" y2="600" class="line"/>
+    <line x1="260" y1="640" x2="220" y2="695" class="line"/>
+    <line x1="260" y1="640" x2="300" y2="695" class="line"/>
+    <text x="260" y="730" class="actorText">Swimmer</text>
+  </g>
+
+  <g id="payment">
+    <circle cx="1340" cy="545" r="28" fill="white" stroke="#222" stroke-width="2"/>
+    <line x1="1340" y1="573" x2="1340" y2="640" class="line"/>
+    <line x1="1295" y1="600" x2="1385" y2="600" class="line"/>
+    <line x1="1340" y1="640" x2="1300" y2="695" class="line"/>
+    <line x1="1340" y1="640" x2="1380" y2="695" class="line"/>
+    <text x="1340" y="730" class="actorText">Payment</text>
+    <text x="1340" y="758" class="smallText">System</text>
+  </g>
+
+  <!-- Generalisation -->
+  <path d="M100 520 C115 435, 135 410, 155 385" class="gen"/>
+  <path d="M240 520 C225 435, 205 410, 185 385" class="gen"/>
+  <text x="170" y="475" class="smallText">generalisation</text>
+
+  <!-- use cases -->
+  <ellipse cx="520" cy="190" rx="105" ry="42" class="box"/>
+  <text x="520" y="198" class="label">Log in</text>
+
+  <ellipse cx="735" cy="220" rx="170" ry="45" class="box"/>
+  <text x="735" y="215" class="label">Schedule extra</text>
+  <text x="735" y="240" class="label">training session</text>
+
+  <ellipse cx="950" cy="335" rx="150" ry="42" class="box"/>
+  <text x="950" y="343" class="label">Send alert</text>
+
+  <ellipse cx="560" cy="335" rx="155" ry="42" class="box"/>
+  <text x="560" y="330" class="label">View swimmer</text>
+  <text x="560" y="355" class="label">information</text>
+
+  <ellipse cx="750" cy="440" rx="165" ry="42" class="box"/>
+  <text x="750" y="435" class="label">Record competition</text>
+  <text x="750" y="460" class="label">results</text>
+
+  <ellipse cx="535" cy="555" rx="150" ry="42" class="box"/>
+  <text x="535" y="550" class="label">View competition</text>
+  <text x="535" y="575" class="label">times</text>
+
+  <ellipse cx="775" cy="570" rx="150" ry="42" class="box"/>
+  <text x="775" y="565" class="label">Edit personal</text>
+  <text x="775" y="590" class="label">details</text>
+
+  <ellipse cx="990" cy="570" rx="130" ry="42" class="box"/>
+  <text x="990" y="565" class="label">View upcoming</text>
+  <text x="990" y="590" class="label">swim meets</text>
+
+  <ellipse cx="560" cy="700" rx="150" ry="42" class="box"/>
+  <text x="560" y="695" class="label">Accept training</text>
+  <text x="560" y="720" class="label">time</text>
+
+  <ellipse cx="790" cy="700" rx="150" ry="42" class="box"/>
+  <text x="790" y="695" class="label">Reject training</text>
+  <text x="790" y="720" class="label">time</text>
+
+  <ellipse cx="1010" cy="735" rx="150" ry="42" class="box"/>
+  <text x="1010" y="730" class="label">Suggest alternative</text>
+  <text x="1010" y="755" class="label">time</text>
+
+  <ellipse cx="700" cy="815" rx="150" ry="42" class="box"/>
+  <text x="700" y="810" class="label">Pay for training</text>
+  <text x="700" y="835" class="label">session</text>
+
+  <ellipse cx="1010" cy="815" rx="135" ry="42" class="box"/>
+  <text x="1010" y="823" class="label">Process payment</text>
+
+  <!-- actor associations -->
+  <path d="M210 250 L420 190" class="line"/>
+  <path d="M120 590 L585 225" class="line"/>
+  <path d="M120 610 L430 335" class="line"/>
+  <path d="M120 625 L595 435" class="line"/>
+
+  <path d="M305 585 L420 205" class="line"/>
+  <path d="M305 600 L410 555" class="line"/>
+  <path d="M305 615 L625 570" class="line"/>
+  <path d="M305 630 L860 570" class="line"/>
+  <path d="M305 655 L420 700" class="line"/>
+  <path d="M305 675 L640 700" class="line"/>
+  <path d="M305 700 L560 815" class="line"/>
+
+  <path d="M1295 625 L1135 815" class="line"/>
+
+  <!-- include / extend -->
+  <path d="M735 265 C780 300, 840 320, 880 330" class="dash"/>
+  <text x="820" y="300" class="smallText">&lt;&lt;include&gt;&gt;</text>
+
+  <path d="M700 785 C650 610, 575 350, 530 232" class="dash"/>
+  <text x="610" y="500" class="smallText">&lt;&lt;include&gt;&gt;</text>
+
+  <path d="M835 785 C900 825, 950 825, 890 815" class="dash"/>
+  <text x="845" y="850" class="smallText">&lt;&lt;include&gt;&gt;</text>
+
+  <path d="M895 710 C925 715, 945 720, 970 727" class="dash"/>
+  <text x="920" y="695" class="smallText">&lt;&lt;extend&gt;&gt;</text>
+
+</svg>
