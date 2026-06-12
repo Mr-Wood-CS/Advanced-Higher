@@ -1,0 +1,159 @@
+<mxfile host="65bd71144e">
+    <diagram name="Swimming Portal Use Case Diagram" id="swimming-portal-use-case">
+        <mxGraphModel dx="2197" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="system" value="Swimming Portal App" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontStyle=1;verticalAlign=top;spacingTop=8;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="60" width="860" height="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor-user" value="Portal User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="372.5" width="70" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor-coach" value="Coach&#xa;(Avril)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="115" width="70" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor-swimmer" value="Swimmer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="605" width="70" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor-payment" value="Payment&#xa;Service" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="1230" y="582.5" width="80" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor-notification" value="Notification&#xa;Service" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="212.5" width="90" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-login" value="Log in" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="790" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-generate-login" value="Generate swimmer&#xa;login details" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="145" width="170" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-review-calendar" value="Review available&#xa;dates" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="65" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-book-extra" value="Book extra&#xa;training session" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="645" y="250" width="170" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-notify" value="Send schedule&#xa;alert" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="940" y="250" width="150" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-respond" value="Accept or reject&#xa;allocated time" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="400" width="170" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-view-meets" value="View upcoming&#xa;swim meets" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="420" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-edit-details" value="Add / change&#xa;personal details" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="535" width="170" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-view-times" value="View competition&#xa;times by technique" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="670" width="185" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-view-all" value="View swimmer&#xa;information" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="280" width="165" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-pay" value="Pay for extra&#xa;training session" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="410" width="170" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="uc-process-payment" value="Process payment" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="620" width="150" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-coach-generate" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-coach" target="uc-generate-login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-coach-calendar" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-coach" target="uc-review-calendar" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-coach-book" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-coach" target="uc-book-extra" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-coach-view-all" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-coach" target="uc-view-all" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-swimmer-login" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-swimmer" target="uc-login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-swimmer-respond" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-swimmer" target="uc-respond" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-swimmer-meets" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-swimmer" target="uc-view-meets" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-swimmer-details" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-swimmer" target="uc-edit-details" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-swimmer-times" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-swimmer" target="uc-view-times" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-swimmer-pay" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-swimmer" target="uc-pay" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-notification" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="uc-notify" target="actor-notification" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="assoc-payment" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" parent="1" source="uc-process-payment" target="actor-payment" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="gen-coach-user" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="105" y="300" as="sourcePoint"/>
+                        <mxPoint x="105" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="gen-swimmer-user" style="endArrow=block;endFill=0;html=1;rounded=0;strokeColor=#000000;" parent="1" source="actor-swimmer" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="110" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="include-book-calendar" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;dashed=1;strokeColor=#000000;" parent="1" source="uc-book-extra" target="uc-review-calendar" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="include-book-notify" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;dashed=1;strokeColor=#000000;" parent="1" source="uc-book-extra" target="uc-notify" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="include-pay-process" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;dashed=1;strokeColor=#000000;" parent="1" source="uc-pay" target="uc-process-payment" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="extend-respond-book" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;dashed=1;strokeColor=#000000;" parent="1" source="uc-respond" target="uc-book-extra" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="include-secure-times" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;dashed=1;strokeColor=#000000;" parent="1" source="uc-view-times" target="uc-login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="include-secure-details" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;dashed=1;strokeColor=#000000;" parent="1" source="uc-edit-details" target="uc-login" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="note-title" value="Diagram notes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eaf4ff;strokeColor=#6c8ebf;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="45" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="note-actors" value="Actors are people or outside systems that interact with the swimming portal." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="95" width="260" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="note-boundary" value="The rectangle is the system boundary. Use cases inside it are functions provided by the app." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="180" width="260" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="note-include" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt; means the target use case is always part of the source use case. Booking extra training includes reviewing dates and sending an alert." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff8e6;strokeColor=#d6b656;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="280" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="note-extend" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt; shows optional or follow-up behaviour. A swimmer accepts or rejects a time after a booking alert is sent." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="412.5" width="260" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="note-generalization" value="Generalization shows shared behaviour. Coach and Swimmer are both types of Portal User." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="530" width="260" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="note-payment" value="Payment Service and Notification Service are external systems used by the app." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="637.5" width="260" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="callout-coach" value="Avril can create logins, review dates, book extra lessons, and view swimmer information." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#f5f5f5;strokeColor=#666666;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+                    <mxGeometry x="155" y="30" width="140" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="callout-swimmer" value="Swimmers log in to manage details, see meets, view competition times, respond to sessions, and pay." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#f5f5f5;strokeColor=#666666;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="765" width="145" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="callout-usecases" value="Ovals are use cases: goals or actions the app supports for users." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#f5f5f5;strokeColor=#666666;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+                    <mxGeometry x="900" y="90" width="170" height="75" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
