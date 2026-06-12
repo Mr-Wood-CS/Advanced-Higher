@@ -92,6 +92,7 @@ theme:
     #- navigation.footer
     - navigation.tabs
 plugins:
+  - search
   - glightbox
 
 copyright: Copyright &copy; 2025 Pixel&Wood Computer Science Tuition
