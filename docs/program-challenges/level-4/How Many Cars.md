@@ -2,7 +2,7 @@
 
 Difficulty: Level 4
 
-Save your file as: `How Many Cars?.py`
+Save your file as: `How Many Cars.py`
 
 ## Brief
 
