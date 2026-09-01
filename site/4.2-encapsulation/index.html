@@ -9,7 +9,7 @@
         <link rel="prev" href="../4.1-objects/">
       
       
-        <link rel="next" href="../4.3-sub-class/">
+        <link rel="next" href="../4.3-inheritance-and-subclasses/">
       
       
         
@@ -20,7 +20,7 @@
     
     
       
-        <title>Arrays of Objects - Advanced Higher Computer Science</title>
+        <title>Encapsulation - Advanced Higher Computer Science</title>
       
     
     
@@ -146,7 +146,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arrays-of-objects" class="md-skip">
+        <a href="#encapsulation" class="md-skip">
           Skip to content
         </a>
       
@@ -182,7 +182,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arrays of Objects
+              Encapsulation
             
           </span>
         </div>
@@ -931,7 +931,7 @@
   <span class="md-ellipsis">
     
   
-    Arrays and Records
+    Data Structures
   
 
     
@@ -947,7 +947,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Arrays and Records
+    Data Structures
   
 
           </label>
@@ -967,7 +967,7 @@
   <span class="md-ellipsis">
     
   
-    Parrallel Arrays
+    Parallel 1D Arrays
   
 
     
@@ -1299,7 +1299,7 @@
   <span class="md-ellipsis">
     
   
-    Object Orientated Programming
+    Object-Oriented Programming
   
 
     
@@ -1315,7 +1315,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Object Orientated Programming
+    Object-Oriented Programming
   
 
           </label>
@@ -1335,7 +1335,7 @@
   <span class="md-ellipsis">
     
   
-    Object
+    Classes and Objects
   
 
     
@@ -1372,7 +1372,7 @@
   <span class="md-ellipsis">
     
   
-    Arrays of Objects
+    Encapsulation
   
 
     
@@ -1390,7 +1390,7 @@
   <span class="md-ellipsis">
     
   
-    Arrays of Objects
+    Encapsulation
   
 
     
@@ -1416,10 +1416,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#what-is-an-array-of-objects" class="md-nav__link">
+  <a href="#building-on-classes-and-objects" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is an Array of Objects?
+        Building on Classes and Objects
       
     </span>
   </a>
@@ -1427,10 +1427,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-a-class" class="md-nav__link">
+  <a href="#the-main-idea" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating a Class
+        The Main Idea
       
     </span>
   </a>
@@ -1438,10 +1438,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-objects" class="md-nav__link">
+  <a href="#public-and-private-properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating Objects
+        Public and Private Properties
       
     </span>
   </a>
@@ -1449,10 +1449,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-an-array-of-objects" class="md-nav__link">
+  <a href="#accessor-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating an Array of Objects
+        Accessor Methods
       
     </span>
   </a>
@@ -1460,10 +1460,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-objects-in-an-array" class="md-nav__link">
+  <a href="#mutator-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Accessing Objects in an Array
+        Mutator Methods
       
     </span>
   </a>
@@ -1471,10 +1471,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-multiple-properties" class="md-nav__link">
+  <a href="#complete-working-example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Accessing Multiple Properties
+        Complete Working Example
       
     </span>
   </a>
@@ -1482,10 +1482,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating-an-object" class="md-nav__link">
+  <a href="#why-use-encapsulation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Updating an Object
+        Why Use Encapsulation?
       
     </span>
   </a>
@@ -1493,54 +1493,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#looping-through-an-array-of-objects" class="md-nav__link">
+  <a href="#common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Looping Through an Array of Objects
+        Common Mistakes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updating-the-private-property-directly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Updating the Private Property Directly
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#using-methods-in-an-array-of-objects" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#validating-after-storing-the-value" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Using Methods in an Array of Objects
+        Validating After Storing the Value
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#example-array-of-car-objects" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#forgetting-to-return-from-an-accessor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example: Array of Car Objects
+        Forgetting to Return from an Accessor
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-arrays-of-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why Use Arrays of Objects?
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#check-your-understanding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Summary
+        Check Your Understanding
       
     </span>
   </a>
@@ -1563,14 +1569,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../4.3-sub-class/" class="md-nav__link">
+      <a href="../4.3-inheritance-and-subclasses/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Sub-classes
+    Inheritance and Subclasses
   
 
     
@@ -1591,35 +1597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../4.4-encapsulation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Encapsulation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4.5-polymorphism/" class="md-nav__link">
+      <a href="../4.4-polymorphism/" class="md-nav__link">
         
   
   
@@ -1627,6 +1605,34 @@
     
   
     Polymorphism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.5-arrays-of-objects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arrays of Objects
   
 
     
@@ -1769,63 +1775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../6.1-binary-search/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Binary Search
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6.2-insertation-sort/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Insertation Sort
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6.3-bubble-sort/" class="md-nav__link">
+      <a href="../6.1-bubble-sort/" class="md-nav__link">
         
   
   
@@ -1833,6 +1783,62 @@
     
   
     Bubble Sort
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.2-insertion-sort/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Insertion Sort
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.3-binary-search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binary Search
   
 
     
@@ -3537,10 +3543,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#what-is-an-array-of-objects" class="md-nav__link">
+  <a href="#building-on-classes-and-objects" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is an Array of Objects?
+        Building on Classes and Objects
       
     </span>
   </a>
@@ -3548,10 +3554,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-a-class" class="md-nav__link">
+  <a href="#the-main-idea" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating a Class
+        The Main Idea
       
     </span>
   </a>
@@ -3559,10 +3565,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-objects" class="md-nav__link">
+  <a href="#public-and-private-properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating Objects
+        Public and Private Properties
       
     </span>
   </a>
@@ -3570,10 +3576,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-an-array-of-objects" class="md-nav__link">
+  <a href="#accessor-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating an Array of Objects
+        Accessor Methods
       
     </span>
   </a>
@@ -3581,10 +3587,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-objects-in-an-array" class="md-nav__link">
+  <a href="#mutator-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Accessing Objects in an Array
+        Mutator Methods
       
     </span>
   </a>
@@ -3592,10 +3598,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-multiple-properties" class="md-nav__link">
+  <a href="#complete-working-example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Accessing Multiple Properties
+        Complete Working Example
       
     </span>
   </a>
@@ -3603,10 +3609,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating-an-object" class="md-nav__link">
+  <a href="#why-use-encapsulation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Updating an Object
+        Why Use Encapsulation?
       
     </span>
   </a>
@@ -3614,54 +3620,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#looping-through-an-array-of-objects" class="md-nav__link">
+  <a href="#common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Looping Through an Array of Objects
+        Common Mistakes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#updating-the-private-property-directly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Updating the Private Property Directly
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#using-methods-in-an-array-of-objects" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#validating-after-storing-the-value" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Using Methods in an Array of Objects
+        Validating After Storing the Value
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#example-array-of-car-objects" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#forgetting-to-return-from-an-accessor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example: Array of Car Objects
+        Forgetting to Return from an Accessor
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-arrays-of-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why Use Arrays of Objects?
-      
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#check-your-understanding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Summary
+        Check Your Understanding
       
     </span>
   </a>
@@ -3766,7 +3778,7 @@
         <a href="../4.1-objects/" class="md-path__link">
           
   <span class="md-ellipsis">
-    Object Orientated Programming
+    Object-Oriented Programming
   </span>
 
         </a>
@@ -3785,209 +3797,223 @@
 
 
 
-<h1 id="arrays-of-objects">Arrays of Objects</h1>
-<h2 id="what-is-an-array-of-objects">What is an Array of Objects?</h2>
-<p>An array of objects allows multiple objects created from the same class to be stored in a single array.</p>
-<p>Each object in the array has its own set of properties and methods.</p>
-<p>Arrays of objects are useful when a program needs to store and process large collections of similar objects.</p>
-<p>Examples include:</p>
-<ul>
-<li>A school storing multiple pupils</li>
-<li>A garage storing multiple cars</li>
-<li>A library storing multiple books</li>
-<li>A game storing multiple enemies</li>
-</ul>
-<hr>
-<h2 id="creating-a-class">Creating a Class</h2>
-<p>Before creating an array of objects, a class must be defined.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>This class contains two properties:</p>
-<ul>
-<li>name</li>
-<li>year_group</li>
-</ul>
-<hr>
-<h2 id="creating-objects">Creating Objects</h2>
-<p>Objects can be created from the class.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">pupil2</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">pupil3</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Each object stores different data but has the same structure.</p>
-<hr>
-<h2 id="creating-an-array-of-objects">Creating an Array of Objects</h2>
-<p>The objects can be stored inside an array.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">pupils</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>    <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>    <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Charlie"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="p">]</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>The array now contains three Pupil objects.</p>
-<hr>
-<h2 id="accessing-objects-in-an-array">Accessing Objects in an Array</h2>
-<p>Individual objects can be accessed using an index.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupils</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Alice
+<h1 id="encapsulation">Encapsulation</h1>
+<div class="admonition info">
+<p class="admonition-title">What You Need to Know</p>
+<p>You must be able to describe, exemplify and implement encapsulation using public and private properties.</p>
+</div>
+<h2 id="building-on-classes-and-objects">Building on Classes and Objects</h2>
+<p>You have already created objects containing properties and methods:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
 </span></code></pre></div>
-<p>The first index identifies the object.</p>
-<p>The property name is then accessed using dot notation.</p>
-<hr>
-<h2 id="accessing-multiple-properties">Accessing Multiple Properties</h2>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupils</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupils</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Bob
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>5
+<p>So far, external code has been able to change every property directly. This can allow invalid data to enter an object.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">attendance</span> <span class="o">=</span> <span class="mi">150</span>
 </span></code></pre></div>
-<hr>
-<h2 id="updating-an-object">Updating an Object</h2>
-<p>Properties can be changed after an object has been created.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#__codelineno-7-2">2</a></span>
-<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="n">pupils</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="mi">7</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupils</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>7
+<p>An attendance percentage of <code>150</code> is invalid. Encapsulation lets the class control how important properties are accessed and changed.</p>
+<h2 id="the-main-idea">The Main Idea</h2>
+<p>Picture the class as a boundary around its data and methods:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Pupil object
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── public property: name
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── private property: attendance
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├── method: get_attendance()
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>└── method: set_attendance()
 </span></code></pre></div>
-<hr>
-<h2 id="looping-through-an-array-of-objects">Looping Through an Array of Objects</h2>
-<p>A loop can be used to process every object in the array.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">for</span> <span class="n">pupil</span> <span class="ow">in</span> <span class="n">pupils</span><span class="p">:</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">pupil</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Alice
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>Bob
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Charlie
+<p>The same structure in Python is:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attendance</span><span class="p">):</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">attendance</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span> <span class="o">=</span> <span class="n">attendance</span>
 </span></code></pre></div>
-<hr>
-<h2 id="using-methods-in-an-array-of-objects">Using Methods in an Array of Objects</h2>
-<p>Objects often contain methods as well as properties.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
-<span class="normal"><a href="#__codelineno-11-2">2</a></span>
-<span class="normal"><a href="#__codelineno-11-3">3</a></span>
-<span class="normal"><a href="#__codelineno-11-4">4</a></span>
-<span class="normal"><a href="#__codelineno-11-5">5</a></span>
-<span class="normal"><a href="#__codelineno-11-6">6</a></span>
-<span class="normal"><a href="#__codelineno-11-7">7</a></span>
-<span class="normal"><a href="#__codelineno-11-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>The method can be called for every object in the array.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
-<span class="normal"><a href="#__codelineno-12-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="k">for</span> <span class="n">pupil</span> <span class="ow">in</span> <span class="n">pupils</span><span class="p">:</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a>    <span class="n">pupil</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<hr>
-<h2 id="example-array-of-car-objects">Example: Array of Car Objects</h2>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-13-10">10</a></span>
-<span class="normal"><a href="#__codelineno-13-11">11</a></span>
-<span class="normal"><a href="#__codelineno-13-12">12</a></span>
-<span class="normal"><a href="#__codelineno-13-13">13</a></span>
-<span class="normal"><a href="#__codelineno-13-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Car</span><span class="p">:</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">colour</span><span class="p">):</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">make</span> <span class="o">=</span> <span class="n">make</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">colour</span> <span class="o">=</span> <span class="n">colour</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6"></a>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="n">cars</span> <span class="o">=</span> <span class="p">[</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8"></a>    <span class="n">Car</span><span class="p">(</span><span class="s2">"Ford"</span><span class="p">,</span> <span class="s2">"Blue"</span><span class="p">),</span>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9"></a>    <span class="n">Car</span><span class="p">(</span><span class="s2">"BMW"</span><span class="p">,</span> <span class="s2">"Black"</span><span class="p">),</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10"></a>    <span class="n">Car</span><span class="p">(</span><span class="s2">"Toyota"</span><span class="p">,</span> <span class="s2">"White"</span><span class="p">)</span>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="p">]</span>
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12"></a>
-</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13"></a><span class="k">for</span> <span class="n">car</span> <span class="ow">in</span> <span class="n">cars</span><span class="p">:</span>
-</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">car</span><span class="o">.</span><span class="n">make</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Ford
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>BMW
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>Toyota
-</span></code></pre></div>
-<hr>
-<h2 id="why-use-arrays-of-objects">Why Use Arrays of Objects?</h2>
-<p>Arrays of objects allow programs to:</p>
-<ul>
-<li>Store large numbers of similar objects</li>
-<li>Process objects efficiently using loops</li>
-<li>Organise related data together</li>
-<li>Simplify complex programs</li>
-</ul>
-<p>They are commonly used in games, databases, simulations and management systems.</p>
-<hr>
-<h2 id="summary">Summary</h2>
 <table>
 <thead>
 <tr>
-<th>Term</th>
-<th>Description</th>
+<th>Conceptual view</th>
+<th>Python</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Class</td>
-<td>A blueprint used to create objects</td>
+<td>Public property <code>name</code></td>
+<td><code>self.name</code></td>
 </tr>
 <tr>
-<td>Object</td>
-<td>An instance of a class</td>
+<td>Private property <code>attendance</code></td>
+<td><code>self.__attendance</code></td>
 </tr>
 <tr>
-<td>Array of Objects</td>
-<td>A collection of objects stored in an array</td>
+<td>Accessor method</td>
+<td><code>get_attendance()</code></td>
 </tr>
 <tr>
-<td>Property</td>
-<td>Data stored within an object</td>
-</tr>
-<tr>
-<td>Method</td>
-<td>A procedure belonging to an object</td>
-</tr>
-<tr>
-<td>Dot Notation</td>
-<td>Used to access properties and methods</td>
+<td>Mutator method</td>
+<td><code>set_attendance()</code></td>
 </tr>
 </tbody>
 </table>
+<h2 id="public-and-private-properties">Public and Private Properties</h2>
+<p>A <strong>public property</strong> can be accessed directly from outside the class:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Alicia"</span>
+</span></code></pre></div>
+<p>A <strong>private property</strong> should be accessed only through methods provided by the class.</p>
+<p>In Python, a double underscore triggers name mangling:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span>
+</span></code></pre></div>
+<p>This models the private properties used in the SQA reference language and discourages direct external access. Python does not enforce absolute privacy.</p>
+<h2 id="accessor-methods">Accessor Methods</h2>
+<p>An <strong>accessor</strong>, sometimes called a getter, returns the value of a private property:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span>
+</span></code></pre></div>
+<p>Use it through an object:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">get_attendance</span><span class="p">())</span>
+</span></code></pre></div>
+<p>When the method runs, <code>self</code> refers to <code>pupil1</code>.</p>
+<h2 id="mutator-methods">Mutator Methods</h2>
+<p>A <strong>mutator</strong>, sometimes called a setter, controls changes to a private property:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">set_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attendance</span><span class="p">):</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">attendance</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span> <span class="o">=</span> <span class="n">attendance</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Attendance must be between 0 and 100."</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The parameter is checked before the property is changed.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">set_attendance</span><span class="p">(</span><span class="mi">95</span><span class="p">)</span>   <span class="c1"># Accepted</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">set_attendance</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>  <span class="c1"># Rejected</span>
+</span></code></pre></div>
+<h2 id="complete-working-example">Complete Working Example</h2>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Encapsulated Attendance</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span>
+<span class="normal"><a href="#__codelineno-10-14">14</a></span>
+<span class="normal"><a href="#__codelineno-10-15">15</a></span>
+<span class="normal"><a href="#__codelineno-10-16">16</a></span>
+<span class="normal"><a href="#__codelineno-10-17">17</a></span>
+<span class="normal"><a href="#__codelineno-10-18">18</a></span>
+<span class="normal"><a href="#__codelineno-10-19">19</a></span>
+<span class="normal"><a href="#__codelineno-10-20">20</a></span>
+<span class="normal"><a href="#__codelineno-10-21">21</a></span>
+<span class="normal"><a href="#__codelineno-10-22">22</a></span>
+<span class="normal"><a href="#__codelineno-10-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attendance</span><span class="p">):</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a>        <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">attendance</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span> <span class="o">=</span> <span class="n">attendance</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">"Attendance must be between 0 and 100."</span><span class="p">)</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15"></a>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Attendance:"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"%"</span><span class="p">)</span>
+</span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19"></a>
+</span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20"></a>
+</span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)</span>
+</span><span id="__span-10-22"><a id="__codelineno-10-22" name="__codelineno-10-22"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">set_attendance</span><span class="p">(</span><span class="mi">95</span><span class="p">)</span>
+</span><span id="__span-10-23"><a id="__codelineno-10-23" name="__codelineno-10-23"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Output:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Name: Alice
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>Attendance: 95%
+</span></code></pre></div>
+<h2 id="why-use-encapsulation">Why Use Encapsulation?</h2>
+<p>Encapsulation:</p>
+<ul>
+<li>protects properties from accidental changes</li>
+<li>allows validation before a value is stored</li>
+<li>keeps responsibility for the data inside its class</li>
+<li>makes a class easier to update and maintain</li>
+</ul>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<h3 id="updating-the-private-property-directly">Updating the Private Property Directly</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Avoid this</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">__attendance</span> <span class="o">=</span> <span class="mi">95</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1"># Use the mutator</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">set_attendance</span><span class="p">(</span><span class="mi">95</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="validating-after-storing-the-value">Validating After Storing the Value</h3>
+<p>The value should be checked before it is assigned to the property.</p>
+<h3 id="forgetting-to-return-from-an-accessor">Forgetting to Return from an Accessor</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_attendance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__attendance</span>
+</span></code></pre></div>
+<p>Without <code>return</code>, the caller receives <code>None</code>.</p>
+<h2 id="check-your-understanding">Check Your Understanding</h2>
+<p>Study the following program:</p>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Game Score</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-14-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-14-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-14-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-14-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-14-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-14-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-14-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-14-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-14-10">10</a></span>
+<span class="normal"><a href="#__codelineno-14-11">11</a></span>
+<span class="normal"><a href="#__codelineno-14-12">12</a></span>
+<span class="normal"><a href="#__codelineno-14-13">13</a></span>
+<span class="normal"><a href="#__codelineno-14-14">14</a></span>
+<span class="normal"><a href="#__codelineno-14-15">15</a></span>
+<span class="normal"><a href="#__codelineno-14-16">16</a></span>
+<span class="normal"><a href="#__codelineno-14-17">17</a></span>
+<span class="normal"><a href="#__codelineno-14-18">18</a></span>
+<span class="normal"><a href="#__codelineno-14-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Player</span><span class="p">:</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">):</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">__score</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6"></a>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_score</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__score</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9"></a>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">set_score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11"></a>        <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">__score</span> <span class="o">=</span> <span class="n">score</span>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">"Score cannot be negative."</span><span class="p">)</span>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15"></a>
+</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16"></a>
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17"></a><span class="n">player1</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="s2">"SkyRunner"</span><span class="p">)</span>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18"></a><span class="n">player1</span><span class="o">.</span><span class="n">set_score</span><span class="p">(</span><span class="mi">250</span><span class="p">)</span>
+</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">player1</span><span class="o">.</span><span class="n">get_score</span><span class="p">())</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Answer the following questions:</p>
+<ol>
+<li>Identify the public property, private property, accessor and mutator.</li>
+<li>Explain why <code>score</code> has been made private.</li>
+<li>Explain what happens when <code>player1.set_score(250)</code> runs.</li>
+<li>Write the exact output produced by the program.</li>
+<li>Add and test a second call that attempts to set the score to <code>-10</code>.</li>
+</ol>
+<p><strong>Write your answers in your workbook. Add a printscreen of the tested program and its output.</strong></p>
+<p><strong>Next:</strong> <a href="../4.3-inheritance-and-subclasses/">Inheritance and Subclasses</a></p>
 
 
 

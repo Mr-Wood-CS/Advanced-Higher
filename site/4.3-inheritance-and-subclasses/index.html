@@ -6,10 +6,10 @@
       
       
       
-        <link rel="prev" href="../3.5-arrays-of-objects/">
+        <link rel="prev" href="../4.2-encapsulation/">
       
       
-        <link rel="next" href="../4.4-encapsulation/">
+        <link rel="next" href="../4.4-polymorphism/">
       
       
         
@@ -20,7 +20,7 @@
     
     
       
-        <title>Sub-classes - Advanced Higher Computer Science</title>
+        <title>Inheritance and Subclasses - Advanced Higher Computer Science</title>
       
     
     
@@ -146,7 +146,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#subclasses-and-inheritance" class="md-skip">
+        <a href="#inheritance-and-subclasses" class="md-skip">
           Skip to content
         </a>
       
@@ -182,7 +182,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sub-classes
+              Inheritance and Subclasses
             
           </span>
         </div>
@@ -931,7 +931,7 @@
   <span class="md-ellipsis">
     
   
-    Arrays and Records
+    Data Structures
   
 
     
@@ -947,7 +947,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Arrays and Records
+    Data Structures
   
 
           </label>
@@ -967,7 +967,7 @@
   <span class="md-ellipsis">
     
   
-    Parrallel Arrays
+    Parallel 1D Arrays
   
 
     
@@ -1299,7 +1299,7 @@
   <span class="md-ellipsis">
     
   
-    Object Orientated Programming
+    Object-Oriented Programming
   
 
     
@@ -1315,7 +1315,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Object Orientated Programming
+    Object-Oriented Programming
   
 
           </label>
@@ -1335,7 +1335,7 @@
   <span class="md-ellipsis">
     
   
-    Object
+    Classes and Objects
   
 
     
@@ -1356,14 +1356,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.5-arrays-of-objects/" class="md-nav__link">
+      <a href="../4.2-encapsulation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Arrays of Objects
+    Encapsulation
   
 
     
@@ -1400,7 +1400,7 @@
   <span class="md-ellipsis">
     
   
-    Sub-classes
+    Inheritance and Subclasses
   
 
     
@@ -1418,7 +1418,7 @@
   <span class="md-ellipsis">
     
   
-    Sub-classes
+    Inheritance and Subclasses
   
 
     
@@ -1444,10 +1444,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#what-is-a-subclass" class="md-nav__link">
+  <a href="#the-problem-of-repeated-code" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is a Subclass?
+        The Problem of Repeated Code
       
     </span>
   </a>
@@ -1455,10 +1455,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-use-inheritance" class="md-nav__link">
+  <a href="#the-main-idea" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Use Inheritance?
+        The Main Idea
       
     </span>
   </a>
@@ -1466,49 +1466,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#superclass-and-subclass" class="md-nav__link">
+  <a href="#step-1-define-the-superclass" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Superclass and Subclass
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Superclass and Subclass">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#superclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Superclass
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#subclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Subclass
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-objects-from-a-subclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Objects from a Subclass
+        Step 1 — Define the Superclass
       
     </span>
   </a>
@@ -1516,10 +1477,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#inheriting-methods" class="md-nav__link">
+  <a href="#step-2-define-the-subclass" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inheriting Methods
+        Step 2 — Define the Subclass
       
     </span>
   </a>
@@ -1527,10 +1488,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-new-properties" class="md-nav__link">
+  <a href="#step-3-call-the-superclass-initialiser" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding New Properties
+        Step 3 — Call the Superclass Initialiser
       
     </span>
   </a>
@@ -1538,10 +1499,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-new-methods" class="md-nav__link">
+  <a href="#step-4-create-a-subclass-object" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding New Methods
+        Step 4 — Create a Subclass Object
       
     </span>
   </a>
@@ -1549,10 +1510,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#overriding-methods" class="md-nav__link">
+  <a href="#step-5-use-an-inherited-method" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overriding Methods
+        Step 5 — Use an Inherited Method
       
     </span>
   </a>
@@ -1560,63 +1521,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#uml-representation" class="md-nav__link">
+  <a href="#adding-another-subclass" class="md-nav__link">
     <span class="md-ellipsis">
       
-        UML Representation
+        Adding Another Subclass
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#school-register-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        School Register Example
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="School Register Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#superclass_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Superclass
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#subclass_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Subclass
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#object" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Object
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1632,10 +1543,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Summary
+        Common Mistakes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#omitting-the-superclass-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Omitting the Superclass Name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forgetting-super__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forgetting super().__init__()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recreating-an-inherited-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recreating an Inherited Property
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-your-understanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check Your Understanding
       
     </span>
   </a>
@@ -1658,14 +1619,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../4.4-encapsulation/" class="md-nav__link">
+      <a href="../4.4-polymorphism/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Encapsulation
+    Polymorphism
   
 
     
@@ -1686,14 +1647,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../4.5-polymorphism/" class="md-nav__link">
+      <a href="../4.5-arrays-of-objects/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Polymorphism
+    Arrays of Objects
   
 
     
@@ -1836,63 +1797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../6.1-binary-search/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Binary Search
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6.2-insertation-sort/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Insertation Sort
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6.3-bubble-sort/" class="md-nav__link">
+      <a href="../6.1-bubble-sort/" class="md-nav__link">
         
   
   
@@ -1900,6 +1805,62 @@
     
   
     Bubble Sort
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.2-insertion-sort/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Insertion Sort
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.3-binary-search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binary Search
   
 
     
@@ -3604,10 +3565,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#what-is-a-subclass" class="md-nav__link">
+  <a href="#the-problem-of-repeated-code" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is a Subclass?
+        The Problem of Repeated Code
       
     </span>
   </a>
@@ -3615,10 +3576,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-use-inheritance" class="md-nav__link">
+  <a href="#the-main-idea" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Use Inheritance?
+        The Main Idea
       
     </span>
   </a>
@@ -3626,49 +3587,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#superclass-and-subclass" class="md-nav__link">
+  <a href="#step-1-define-the-superclass" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Superclass and Subclass
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Superclass and Subclass">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#superclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Superclass
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#subclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Subclass
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-objects-from-a-subclass" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Objects from a Subclass
+        Step 1 — Define the Superclass
       
     </span>
   </a>
@@ -3676,10 +3598,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#inheriting-methods" class="md-nav__link">
+  <a href="#step-2-define-the-subclass" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Inheriting Methods
+        Step 2 — Define the Subclass
       
     </span>
   </a>
@@ -3687,10 +3609,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-new-properties" class="md-nav__link">
+  <a href="#step-3-call-the-superclass-initialiser" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding New Properties
+        Step 3 — Call the Superclass Initialiser
       
     </span>
   </a>
@@ -3698,10 +3620,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-new-methods" class="md-nav__link">
+  <a href="#step-4-create-a-subclass-object" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding New Methods
+        Step 4 — Create a Subclass Object
       
     </span>
   </a>
@@ -3709,10 +3631,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#overriding-methods" class="md-nav__link">
+  <a href="#step-5-use-an-inherited-method" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overriding Methods
+        Step 5 — Use an Inherited Method
       
     </span>
   </a>
@@ -3720,63 +3642,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#uml-representation" class="md-nav__link">
+  <a href="#adding-another-subclass" class="md-nav__link">
     <span class="md-ellipsis">
       
-        UML Representation
+        Adding Another Subclass
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#school-register-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        School Register Example
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="School Register Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#superclass_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Superclass
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#subclass_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Subclass
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#object" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Object
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3792,10 +3664,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Summary
+        Common Mistakes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#omitting-the-superclass-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Omitting the Superclass Name
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forgetting-super__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forgetting super().__init__()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recreating-an-inherited-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recreating an Inherited Property
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-your-understanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Check Your Understanding
       
     </span>
   </a>
@@ -3900,7 +3822,7 @@
         <a href="../4.1-objects/" class="md-path__link">
           
   <span class="md-ellipsis">
-    Object Orientated Programming
+    Object-Oriented Programming
   </span>
 
         </a>
@@ -3919,324 +3841,251 @@
 
 
 
-<h1 id="subclasses-and-inheritance">Subclasses and Inheritance</h1>
-<h2 id="what-is-a-subclass">What is a Subclass?</h2>
-<p>A subclass is a class that inherits properties and methods from another class.</p>
-<p>The class being inherited from is called the superclass (or parent class).</p>
-<p>Inheritance allows programmers to reuse existing code and create specialised versions of existing classes.</p>
-<hr>
-<h2 id="why-use-inheritance">Why Use Inheritance?</h2>
-<p>Inheritance helps to:</p>
-<ul>
-<li>Reduce code duplication</li>
-<li>Improve code reuse</li>
-<li>Create logical relationships between classes</li>
-<li>Make programs easier to maintain</li>
-<li>Extend existing classes with additional features</li>
-</ul>
-<hr>
-<h2 id="superclass-and-subclass">Superclass and Subclass</h2>
-<p>Consider a school register program.</p>
-<p>All people in the register have a name.</p>
-<p>Instead of writing the same code multiple times, a superclass can be created.</p>
-<h3 id="superclass">Superclass</h3>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<hr>
-<h3 id="subclass">Subclass</h3>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>The Pupil class inherits the name property from Person.</p>
-<p>It also introduces a new property called year_group.</p>
-<hr>
-<h2 id="creating-objects-from-a-subclass">Creating Objects from a Subclass</h2>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Alice
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>6
+<h1 id="inheritance-and-subclasses">Inheritance and Subclasses</h1>
+<div class="admonition info">
+<p class="admonition-title">What You Need to Know</p>
+<p>You must be able to describe, exemplify and implement superclasses, subclasses and inheritance.</p>
+</div>
+<h2 id="the-problem-of-repeated-code">The Problem of Repeated Code</h2>
+<p>Suppose a program needs pupil and teacher objects. Both types of person have a name, so defining them independently repeats code:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">Teacher</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 </span></code></pre></div>
-<p>The object has access to:</p>
-<ul>
-<li>Inherited properties</li>
-<li>Its own properties</li>
-</ul>
-<hr>
-<h2 id="inheriting-methods">Inheriting Methods</h2>
-<p>Subclasses inherit methods as well as properties.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span>
-<span class="normal"><a href="#__codelineno-4-6">6</a></span>
-<span class="normal"><a href="#__codelineno-4-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">:</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>    <span class="k">pass</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_name</span><span class="p">()</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Alice
+<p>Inheritance allows shared properties and methods to be defined once in a <strong>superclass</strong>.</p>
+<h2 id="the-main-idea">The Main Idea</h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Person superclass
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── property: name
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>└── method: display_name()
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        ▲
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        │ inherits
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        │
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>Pupil subclass
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>└── property: year_group
 </span></code></pre></div>
-<p>Even though the method is not written inside the subclass, it is inherited from the superclass.</p>
-<hr>
-<h2 id="adding-new-properties">Adding New Properties</h2>
-<p>A subclass can introduce additional properties.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span>
-<span class="normal"><a href="#__codelineno-8-4">4</a></span>
-<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>The subclass now contains:</p>
-<ul>
-<li>Inherited features from Person</li>
-<li>New features specific to Pupil</li>
-</ul>
-<hr>
-<h2 id="adding-new-methods">Adding New Methods</h2>
-<p>A subclass can introduce additional methods.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span>
-<span class="normal"><a href="#__codelineno-9-4">4</a></span>
-<span class="normal"><a href="#__codelineno-9-5">5</a></span>
-<span class="normal"><a href="#__codelineno-9-6">6</a></span>
-<span class="normal"><a href="#__codelineno-9-7">7</a></span>
-<span class="normal"><a href="#__codelineno-9-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_year_group</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<hr>
-<h2 id="overriding-methods">Overriding Methods</h2>
-<p>A subclass can replace an inherited method with its own version.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
-<span class="normal"><a href="#__codelineno-10-2">2</a></span>
-<span class="normal"><a href="#__codelineno-10-3">3</a></span>
-<span class="normal"><a href="#__codelineno-10-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">:</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
-<span class="normal"><a href="#__codelineno-11-2">2</a></span>
-<span class="normal"><a href="#__codelineno-11-3">3</a></span>
-<span class="normal"><a href="#__codelineno-11-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Teacher</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Teacher:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
-<span class="normal"><a href="#__codelineno-12-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="n">teacher1</span> <span class="o">=</span> <span class="n">Teacher</span><span class="p">(</span><span class="s2">"Mrs Smith"</span><span class="p">)</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="n">teacher1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Teacher: Mrs Smith
+<p>The same relationship in Python is:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
 </span></code></pre></div>
-<p>This is known as method overriding.</p>
-<hr>
-<h2 id="uml-representation">UML Representation</h2>
-<p>Inheritance can be shown using UML class diagrams.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>        Person
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>           ▲
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>           |
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>      ---------
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>      |       |
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    Pupil   Teacher
-</span></code></pre></div>
-<p>The arrow points towards the superclass.</p>
-<p>This indicates that Pupil and Teacher inherit from Person.</p>
-<hr>
-<h2 id="school-register-example">School Register Example</h2>
-<h3 id="superclass_1">Superclass</h3>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
-<span class="normal"><a href="#__codelineno-15-2">2</a></span>
-<span class="normal"><a href="#__codelineno-15-3">3</a></span>
-<span class="normal"><a href="#__codelineno-15-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">:</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<h3 id="subclass_1">Subclass</h3>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
-<span class="normal"><a href="#__codelineno-16-2">2</a></span>
-<span class="normal"><a href="#__codelineno-16-3">3</a></span>
-<span class="normal"><a href="#__codelineno-16-4">4</a></span>
-<span class="normal"><a href="#__codelineno-16-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2"></a>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<h3 id="object">Object</h3>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
-<span class="normal"><a href="#__codelineno-17-2">2</a></span>
-<span class="normal"><a href="#__codelineno-17-3">3</a></span>
-<span class="normal"><a href="#__codelineno-17-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Alice
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>6
-</span></code></pre></div>
-<hr>
-<h2 id="complete-working-example">Complete Working Example</h2>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-19-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-19-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-19-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-19-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-19-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-19-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-19-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-19-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-19-10">10</a></span>
-<span class="normal"><a href="#__codelineno-19-11">11</a></span>
-<span class="normal"><a href="#__codelineno-19-12">12</a></span>
-<span class="normal"><a href="#__codelineno-19-13">13</a></span>
-<span class="normal"><a href="#__codelineno-19-14">14</a></span>
-<span class="normal"><a href="#__codelineno-19-15">15</a></span>
-<span class="normal"><a href="#__codelineno-19-16">16</a></span>
-<span class="normal"><a href="#__codelineno-19-17">17</a></span>
-<span class="normal"><a href="#__codelineno-19-18">18</a></span>
-<span class="normal"><a href="#__codelineno-19-19">19</a></span>
-<span class="normal"><a href="#__codelineno-19-20">20</a></span>
-<span class="normal"><a href="#__codelineno-19-21">21</a></span>
-<span class="normal"><a href="#__codelineno-19-22">22</a></span>
-<span class="normal"><a href="#__codelineno-19-23">23</a></span>
-<span class="normal"><a href="#__codelineno-19-24">24</a></span>
-<span class="normal"><a href="#__codelineno-19-25">25</a></span>
-<span class="normal"><a href="#__codelineno-19-26">26</a></span>
-<span class="normal"><a href="#__codelineno-19-27">27</a></span>
-<span class="normal"><a href="#__codelineno-19-28">28</a></span>
-<span class="normal"><a href="#__codelineno-19-29">29</a></span>
-<span class="normal"><a href="#__codelineno-19-30">30</a></span>
-<span class="normal"><a href="#__codelineno-19-31">31</a></span>
-<span class="normal"><a href="#__codelineno-19-32">32</a></span>
-<span class="normal"><a href="#__codelineno-19-33">33</a></span>
-<span class="normal"><a href="#__codelineno-19-34">34</a></span>
-<span class="normal"><a href="#__codelineno-19-35">35</a></span>
-<span class="normal"><a href="#__codelineno-19-36">36</a></span>
-<span class="normal"><a href="#__codelineno-19-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">:</span>
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2"></a>
-</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5"></a>
-</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8"></a>
-</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9"></a>
-</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
-</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11"></a>
-</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15"></a>
-</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Pupil:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Year group:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span><span id="__span-19-19"><a id="__codelineno-19-19" name="__codelineno-19-19"></a>
-</span><span id="__span-19-20"><a id="__codelineno-19-20" name="__codelineno-19-20"></a>
-</span><span id="__span-19-21"><a id="__codelineno-19-21" name="__codelineno-19-21"></a><span class="k">class</span><span class="w"> </span><span class="nc">Teacher</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
-</span><span id="__span-19-22"><a id="__codelineno-19-22" name="__codelineno-19-22"></a>
-</span><span id="__span-19-23"><a id="__codelineno-19-23" name="__codelineno-19-23"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">subject</span><span class="p">):</span>
-</span><span id="__span-19-24"><a id="__codelineno-19-24" name="__codelineno-19-24"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-19-25"><a id="__codelineno-19-25" name="__codelineno-19-25"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">subject</span> <span class="o">=</span> <span class="n">subject</span>
-</span><span id="__span-19-26"><a id="__codelineno-19-26" name="__codelineno-19-26"></a>
-</span><span id="__span-19-27"><a id="__codelineno-19-27" name="__codelineno-19-27"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-19-28"><a id="__codelineno-19-28" name="__codelineno-19-28"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Teacher:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-19-29"><a id="__codelineno-19-29" name="__codelineno-19-29"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Subject:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">subject</span><span class="p">)</span>
-</span><span id="__span-19-30"><a id="__codelineno-19-30" name="__codelineno-19-30"></a>
-</span><span id="__span-19-31"><a id="__codelineno-19-31" name="__codelineno-19-31"></a>
-</span><span id="__span-19-32"><a id="__codelineno-19-32" name="__codelineno-19-32"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-19-33"><a id="__codelineno-19-33" name="__codelineno-19-33"></a><span class="n">teacher1</span> <span class="o">=</span> <span class="n">Teacher</span><span class="p">(</span><span class="s2">"Mrs Smith"</span><span class="p">,</span> <span class="s2">"Computing"</span><span class="p">)</span>
-</span><span id="__span-19-34"><a id="__codelineno-19-34" name="__codelineno-19-34"></a>
-</span><span id="__span-19-35"><a id="__codelineno-19-35" name="__codelineno-19-35"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
-</span><span id="__span-19-36"><a id="__codelineno-19-36" name="__codelineno-19-36"></a><span class="nb">print</span><span class="p">()</span>
-</span><span id="__span-19-37"><a id="__codelineno-19-37" name="__codelineno-19-37"></a><span class="n">teacher1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Pupil: Alice
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>Year group: 6
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
-</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>Teacher: Mrs Smith
-</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>Subject: Computing
-</span></code></pre></div>
-<hr>
-<h2 id="summary">Summary</h2>
 <table>
 <thead>
 <tr>
-<th>Term</th>
-<th>Description</th>
+<th>Conceptual view</th>
+<th>Python</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Superclass</td>
-<td>Parent class that provides properties and methods</td>
+<td><code>class Person:</code></td>
 </tr>
 <tr>
 <td>Subclass</td>
-<td>Child class that inherits from another class</td>
+<td><code>class Pupil(Person):</code></td>
 </tr>
 <tr>
-<td>Inheritance</td>
-<td>Reusing properties and methods from another class</td>
+<td>Call superclass initialiser</td>
+<td><code>super().__init__(name)</code></td>
 </tr>
 <tr>
-<td>super()</td>
-<td>Calls the constructor of the superclass</td>
-</tr>
-<tr>
-<td>Method Overriding</td>
-<td>Replacing an inherited method with a new version</td>
+<td>Subclass-only property</td>
+<td><code>self.year_group</code></td>
 </tr>
 </tbody>
 </table>
-<p>Inheritance allows programmers to create specialised classes while reusing existing code.</p>
+<h2 id="step-1-define-the-superclass">Step 1 — Define the Superclass</h2>
+<p>The superclass contains features shared by more than one type of object:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="step-2-define-the-subclass">Step 2 — Define the Subclass</h2>
+<p>Write the superclass name in brackets after the subclass name:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="o">...</span>
+</span></code></pre></div>
+<p>This means that <code>Pupil</code> inherits the properties and methods defined by <code>Person</code>.</p>
+<h2 id="step-3-call-the-superclass-initialiser">Step 3 — Call the Superclass Initialiser</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
+</span></code></pre></div>
+<p><code>super().__init__(name)</code> sends <code>name</code> to the <code>Person</code> initialiser. That initialiser stores it in <code>self.name</code>.</p>
+<p>The <code>Pupil</code> initialiser then adds the property needed only by pupils: <code>self.year_group</code>.</p>
+<h2 id="step-4-create-a-subclass-object">Step 4 — Create a Subclass Object</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The completed object contains both inherited and subclass properties:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pupil1
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>├── name: Alice       ← inherited from Person
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>└── year_group: 6     ← defined by Pupil
+</span></code></pre></div>
+<h2 id="step-5-use-an-inherited-method">Step 5 — Use an Inherited Method</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_name</span><span class="p">()</span>
+</span></code></pre></div>
+<p><code>display_name()</code> is not written inside <code>Pupil</code>, but a pupil object can use it because it was inherited from <code>Person</code>.</p>
+<h2 id="adding-another-subclass">Adding Another Subclass</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Teacher</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">subject</span><span class="p">):</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">subject</span> <span class="o">=</span> <span class="n">subject</span>
+</span></code></pre></div>
+<p><code>Pupil</code> and <code>Teacher</code> both inherit <code>name</code> and <code>display_name()</code> while adding their own specialised properties.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>             Person
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>            /      \
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>       Pupil        Teacher
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>   year_group       subject
+</span></code></pre></div>
+<h2 id="complete-working-example">Complete Working Example</h2>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Person, Pupil and Teacher</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span>
+<span class="normal"><a href="#__codelineno-11-13">13</a></span>
+<span class="normal"><a href="#__codelineno-11-14">14</a></span>
+<span class="normal"><a href="#__codelineno-11-15">15</a></span>
+<span class="normal"><a href="#__codelineno-11-16">16</a></span>
+<span class="normal"><a href="#__codelineno-11-17">17</a></span>
+<span class="normal"><a href="#__codelineno-11-18">18</a></span>
+<span class="normal"><a href="#__codelineno-11-19">19</a></span>
+<span class="normal"><a href="#__codelineno-11-20">20</a></span>
+<span class="normal"><a href="#__codelineno-11-21">21</a></span>
+<span class="normal"><a href="#__codelineno-11-22">22</a></span>
+<span class="normal"><a href="#__codelineno-11-23">23</a></span>
+<span class="normal"><a href="#__codelineno-11-24">24</a></span>
+<span class="normal"><a href="#__codelineno-11-25">25</a></span>
+<span class="normal"><a href="#__codelineno-11-26">26</a></span>
+<span class="normal"><a href="#__codelineno-11-27">27</a></span>
+<span class="normal"><a href="#__codelineno-11-28">28</a></span>
+<span class="normal"><a href="#__codelineno-11-29">29</a></span>
+<span class="normal"><a href="#__codelineno-11-30">30</a></span>
+<span class="normal"><a href="#__codelineno-11-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">:</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8"></a>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9"></a>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11"></a>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15"></a>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16"></a>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="k">class</span><span class="w"> </span><span class="nc">Teacher</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18"></a>
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">subject</span><span class="p">):</span>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">subject</span> <span class="o">=</span> <span class="n">subject</span>
+</span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22"></a>
+</span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23"></a>
+</span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-11-25"><a id="__codelineno-11-25" name="__codelineno-11-25"></a><span class="n">teacher1</span> <span class="o">=</span> <span class="n">Teacher</span><span class="p">(</span><span class="s2">"Mrs Smith"</span><span class="p">,</span> <span class="s2">"Computing"</span><span class="p">)</span>
+</span><span id="__span-11-26"><a id="__codelineno-11-26" name="__codelineno-11-26"></a>
+</span><span id="__span-11-27"><a id="__codelineno-11-27" name="__codelineno-11-27"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_name</span><span class="p">()</span>
+</span><span id="__span-11-28"><a id="__codelineno-11-28" name="__codelineno-11-28"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Year group:"</span><span class="p">,</span> <span class="n">pupil1</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
+</span><span id="__span-11-29"><a id="__codelineno-11-29" name="__codelineno-11-29"></a>
+</span><span id="__span-11-30"><a id="__codelineno-11-30" name="__codelineno-11-30"></a><span class="n">teacher1</span><span class="o">.</span><span class="n">display_name</span><span class="p">()</span>
+</span><span id="__span-11-31"><a id="__codelineno-11-31" name="__codelineno-11-31"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Subject:"</span><span class="p">,</span> <span class="n">teacher1</span><span class="o">.</span><span class="n">subject</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<h3 id="omitting-the-superclass-name">Omitting the Superclass Name</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Does not inherit from Person</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="o">...</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="c1"># Inherits from Person</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="o">...</span>
+</span></code></pre></div>
+<h3 id="forgetting-super__init__">Forgetting <code>super().__init__()</code></h3>
+<p>If the superclass initialiser is not called, its properties may not be created.</p>
+<h3 id="recreating-an-inherited-property">Recreating an Inherited Property</h3>
+<p>Let the superclass initialise shared properties rather than duplicating the assignment in every subclass.</p>
+<h2 id="check-your-understanding">Check Your Understanding</h2>
+<p>Study the following program:</p>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Library Items</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-13-10">10</a></span>
+<span class="normal"><a href="#__codelineno-13-11">11</a></span>
+<span class="normal"><a href="#__codelineno-13-12">12</a></span>
+<span class="normal"><a href="#__codelineno-13-13">13</a></span>
+<span class="normal"><a href="#__codelineno-13-14">14</a></span>
+<span class="normal"><a href="#__codelineno-13-15">15</a></span>
+<span class="normal"><a href="#__codelineno-13-16">16</a></span>
+<span class="normal"><a href="#__codelineno-13-17">17</a></span>
+<span class="normal"><a href="#__codelineno-13-18">18</a></span>
+<span class="normal"><a href="#__codelineno-13-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">LibraryItem</span><span class="p">:</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5"></a>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_title</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8"></a>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9"></a>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="k">class</span><span class="w"> </span><span class="nc">Book</span><span class="p">(</span><span class="n">LibraryItem</span><span class="p">):</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11"></a>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">author</span><span class="p">):</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">author</span> <span class="o">=</span> <span class="n">author</span>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15"></a>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16"></a>
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17"></a><span class="n">book1</span> <span class="o">=</span> <span class="n">Book</span><span class="p">(</span><span class="s2">"The Hobbit"</span><span class="p">,</span> <span class="s2">"J. R. R. Tolkien"</span><span class="p">)</span>
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18"></a><span class="n">book1</span><span class="o">.</span><span class="n">display_title</span><span class="p">()</span>
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">book1</span><span class="o">.</span><span class="n">author</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Answer the following questions:</p>
+<ol>
+<li>Identify the superclass and subclass.</li>
+<li>Identify the inherited property, inherited method and subclass property.</li>
+<li>Explain what <code>super().__init__(title)</code> does.</li>
+<li>Write the exact output produced by the program.</li>
+<li>Add a second subclass called <code>DVD</code> that inherits <code>title</code> and adds a <code>duration</code> property.</li>
+</ol>
+<p><strong>Write your answers in your workbook. Add a printscreen showing a tested <code>DVD</code> object and its output.</strong></p>
+<p>Method overriding is introduced on the next page as part of polymorphism.</p>
+<p><strong>Next:</strong> <a href="../4.4-polymorphism/">Polymorphism</a></p>
 
 
 

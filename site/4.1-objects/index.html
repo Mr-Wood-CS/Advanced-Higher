@@ -9,7 +9,7 @@
         <link rel="prev" href="../3.4.4-2d-array-tasks/">
       
       
-        <link rel="next" href="../3.5-arrays-of-objects/">
+        <link rel="next" href="../4.2-encapsulation/">
       
       
         
@@ -20,7 +20,7 @@
     
     
       
-        <title>Object - Advanced Higher Computer Science</title>
+        <title>Classes and Objects - Advanced Higher Computer Science</title>
       
     
     
@@ -146,7 +146,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#objects" class="md-skip">
+        <a href="#classes-and-objects" class="md-skip">
           Skip to content
         </a>
       
@@ -182,7 +182,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Object
+              Classes and Objects
             
           </span>
         </div>
@@ -931,7 +931,7 @@
   <span class="md-ellipsis">
     
   
-    Arrays and Records
+    Data Structures
   
 
     
@@ -947,7 +947,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Arrays and Records
+    Data Structures
   
 
           </label>
@@ -967,7 +967,7 @@
   <span class="md-ellipsis">
     
   
-    Parrallel Arrays
+    Parallel 1D Arrays
   
 
     
@@ -1299,7 +1299,7 @@
   <span class="md-ellipsis">
     
   
-    Object Orientated Programming
+    Object-Oriented Programming
   
 
     
@@ -1315,7 +1315,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Object Orientated Programming
+    Object-Oriented Programming
   
 
           </label>
@@ -1344,7 +1344,7 @@
   <span class="md-ellipsis">
     
   
-    Object
+    Classes and Objects
   
 
     
@@ -1362,7 +1362,7 @@
   <span class="md-ellipsis">
     
   
-    Object
+    Classes and Objects
   
 
     
@@ -1388,10 +1388,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#what-is-an-object" class="md-nav__link">
+  <a href="#from-records-to-objects" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is an Object?
+        From Records to Objects
       
     </span>
   </a>
@@ -1399,98 +1399,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#classes-and-objects" class="md-nav__link">
+  <a href="#four-ideas-to-keep-separate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Classes and Objects
+        Four Ideas to Keep Separate
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Classes and Objects">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instantiation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Instantiation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Properties
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methods
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dot-notation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dot Notation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiple-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multiple Objects
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#school-register-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        School Register Example
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="School Register Example">
+    <nav class="md-nav" aria-label="Four Ideas to Keep Separate">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1505,10 +1422,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#objects_1" class="md-nav__link">
+  <a href="#object" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objects
+        Object
       
     </span>
   </a>
@@ -1516,10 +1433,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#accessing-properties" class="md-nav__link">
+  <a href="#property" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Accessing Properties
+        Property
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method
       
     </span>
   </a>
@@ -1528,6 +1456,94 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-class-can-create-several-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One Class Can Create Several Objects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-defining-a-class-with-__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 — Defining a Class with __init__
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-understanding-self" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 — Understanding self
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-instantiating-an-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 — Instantiating an Object
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-creating-multiple-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 — Creating Multiple Objects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-accessing-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 — Accessing Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-adding-a-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 — Adding a Method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-self-selects-the-correct-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How self Selects the Correct Object
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1543,10 +1559,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-use-objects" class="md-nav__link">
+  <a href="#common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Use Objects?
+        Common Mistakes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#missing-self-from-a-method-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing self from a Method Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forgetting-self-when-creating-a-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forgetting self. When Creating a Property
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calling-a-method-without-parentheses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calling a Method Without Parentheses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supplying-the-wrong-number-of-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supplying the Wrong Number of Arguments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-vocabulary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Vocabulary
       
     </span>
   </a>
@@ -1554,21 +1631,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-terminology" class="md-nav__link">
+  <a href="#check-your-understanding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Common Terminology
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
+        Check Your Understanding
       
     </span>
   </a>
@@ -1591,63 +1657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3.5-arrays-of-objects/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Arrays of Objects
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4.3-sub-class/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Sub-classes
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4.4-encapsulation/" class="md-nav__link">
+      <a href="../4.2-encapsulation/" class="md-nav__link">
         
   
   
@@ -1675,7 +1685,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../4.5-polymorphism/" class="md-nav__link">
+      <a href="../4.3-inheritance-and-subclasses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inheritance and Subclasses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.4-polymorphism/" class="md-nav__link">
         
   
   
@@ -1683,6 +1721,34 @@
     
   
     Polymorphism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.5-arrays-of-objects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arrays of Objects
   
 
     
@@ -1825,63 +1891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../6.1-binary-search/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Binary Search
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6.2-insertation-sort/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Insertation Sort
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6.3-bubble-sort/" class="md-nav__link">
+      <a href="../6.1-bubble-sort/" class="md-nav__link">
         
   
   
@@ -1889,6 +1899,62 @@
     
   
     Bubble Sort
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.2-insertion-sort/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Insertion Sort
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.3-binary-search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binary Search
   
 
     
@@ -3593,10 +3659,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#what-is-an-object" class="md-nav__link">
+  <a href="#from-records-to-objects" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is an Object?
+        From Records to Objects
       
     </span>
   </a>
@@ -3604,98 +3670,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#classes-and-objects" class="md-nav__link">
+  <a href="#four-ideas-to-keep-separate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Classes and Objects
+        Four Ideas to Keep Separate
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Classes and Objects">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instantiation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Instantiation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Properties
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Methods
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dot-notation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dot Notation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiple-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Multiple Objects
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#school-register-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        School Register Example
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="School Register Example">
+    <nav class="md-nav" aria-label="Four Ideas to Keep Separate">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -3710,10 +3693,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#objects_1" class="md-nav__link">
+  <a href="#object" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objects
+        Object
       
     </span>
   </a>
@@ -3721,10 +3704,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#accessing-properties" class="md-nav__link">
+  <a href="#property" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Accessing Properties
+        Property
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method
       
     </span>
   </a>
@@ -3733,6 +3727,94 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-class-can-create-several-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        One Class Can Create Several Objects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-defining-a-class-with-__init__" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1 — Defining a Class with __init__
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-understanding-self" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2 — Understanding self
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-instantiating-an-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3 — Instantiating an Object
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-creating-multiple-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4 — Creating Multiple Objects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-accessing-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 — Accessing Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-adding-a-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6 — Adding a Method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-self-selects-the-correct-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How self Selects the Correct Object
+      
+    </span>
+  </a>
   
 </li>
       
@@ -3748,10 +3830,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-use-objects" class="md-nav__link">
+  <a href="#common-mistakes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why Use Objects?
+        Common Mistakes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#missing-self-from-a-method-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing self from a Method Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forgetting-self-when-creating-a-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forgetting self. When Creating a Property
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calling-a-method-without-parentheses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calling a Method Without Parentheses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supplying-the-wrong-number-of-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supplying the Wrong Number of Arguments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-vocabulary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Vocabulary
       
     </span>
   </a>
@@ -3759,21 +3902,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-terminology" class="md-nav__link">
+  <a href="#check-your-understanding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Common Terminology
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
+        Check Your Understanding
       
     </span>
   </a>
@@ -3878,7 +4010,7 @@
         <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
-    Object Orientated Programming
+    Object-Oriented Programming
   </span>
 
         </a>
@@ -3897,191 +4029,400 @@
 
 
 
-<h1 id="objects">Objects</h1>
-<h2 id="what-is-an-object">What is an Object?</h2>
-<p>An object is an instance of a class.</p>
-<p>Objects are used to represent real-world entities within a program. Each object contains its own data and can perform its own actions.</p>
-<p>For example:</p>
+<h1 id="classes-and-objects">Classes and Objects</h1>
+<div class="admonition info">
+<p class="admonition-title">What You Need to Know</p>
+<p>You must be able to describe, exemplify and implement:</p>
 <ul>
-<li>A pupil in a school system</li>
-<li>A customer in an online shop</li>
-<li>A car in a driving simulator</li>
-<li>A player in a game</li>
+<li>classes</li>
+<li>objects</li>
+<li>properties</li>
+<li>methods</li>
+<li>instantiation</li>
 </ul>
-<p>Object-oriented programming (OOP) allows programs to model real-world situations by creating and using objects.</p>
-<hr>
-<h2 id="classes-and-objects">Classes and Objects</h2>
-<p>A class acts as a blueprint for creating objects.</p>
-<p>The class defines:</p>
-<ul>
-<li>Properties (attributes)</li>
-<li>Methods (behaviours)</li>
-</ul>
-<p>An object is created from the class.</p>
-<h3 id="example">Example</h3>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>The class defines what information every Pupil object should store.</p>
-<hr>
-<h2 id="instantiation">Instantiation</h2>
-<p>Instantiation is the process of creating an object from a class.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">pupil2</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Ben"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Two separate objects have been created.</p>
-<p>Although both objects were created from the same class, they store different data.</p>
-<hr>
-<h2 id="properties">Properties</h2>
-<p>Properties are variables stored within an object.</p>
-<p>They hold information about the object.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Alice
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>6
+</div>
+<h2 id="from-records-to-objects">From Records to Objects</h2>
+<p>At Higher, you learned that a record stores all the data about one pupil together. In Python, you may have accessed its fields like this:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil_record</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil_record</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil_record</span><span class="o">.</span><span class="n">registration_group</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Properties are accessed using dot notation.</p>
-<hr>
-<h2 id="methods">Methods</h2>
-<p>Methods are procedures that belong to an object.</p>
-<p>They define actions that an object can perform.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span>
-<span class="normal"><a href="#__codelineno-4-6">6</a></span>
-<span class="normal"><a href="#__codelineno-4-7">7</a></span>
-<span class="normal"><a href="#__codelineno-4-8">8</a></span>
-<span class="normal"><a href="#__codelineno-4-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Calling the method:</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Alice
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>6
-</span></code></pre></div>
-<hr>
-<h2 id="dot-notation">Dot Notation</h2>
-<p>Dot notation is used to access properties and methods.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#__codelineno-7-2">2</a></span>
-<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>The dot separates the object name from the property or method being accessed.</p>
-<hr>
-<h2 id="multiple-objects">Multiple Objects</h2>
-<p>Many objects can be created from the same class.</p>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="n">pupil2</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Ben"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="n">pupil3</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Cara"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Each object has its own copy of the properties.</p>
-<p>Changing one object does not affect the others.</p>
-<hr>
-<h2 id="school-register-example">School Register Example</h2>
+<p>The complete record represented one pupil. <code>name</code>, <code>age</code> and <code>registration_group</code> were individual fields inside it.</p>
+<p>Object-oriented programming starts with a similar idea. It keeps the information about one pupil together, but uses some new terminology:</p>
+<table>
+<thead>
+<tr>
+<th>Records</th>
+<th>Object-oriented programming</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A record structure defines the fields</td>
+<td>A <strong>class</strong> defines the properties and methods</td>
+</tr>
+<tr>
+<td>One record stores data about one pupil</td>
+<td>One <strong>object</strong> represents one pupil</td>
+</tr>
+<tr>
+<td>A field stores one item of data</td>
+<td>A <strong>property</strong> stores one item of data</td>
+</tr>
+</tbody>
+</table>
+<p>The important new feature is that a class can also define <strong>methods</strong>. A method is code that performs an action using an object's properties.</p>
+<h2 id="four-ideas-to-keep-separate">Four Ideas to Keep Separate</h2>
+<p>Consider a program that stores pupils.</p>
+<p>The short Python examples below preview the four ideas. The syntax is broken down carefully in the numbered steps that follow.</p>
 <h3 id="class">Class</h3>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span>
-<span class="normal"><a href="#__codelineno-9-4">4</a></span>
-<span class="normal"><a href="#__codelineno-9-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<h3 id="objects_1">Objects</h3>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
-<span class="normal"><a href="#__codelineno-10-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="n">pupil2</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Ben"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<h3 id="accessing-properties">Accessing Properties</h3>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span></code></pre></div></td></tr></tbody></table></div>
-<p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Alice
+<p><code>Pupil</code> is the <strong>class</strong>. It defines what every pupil object will store and what every pupil object will be able to do.</p>
+<p>First, picture the class as a simple structure:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Pupil class
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── property: name
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├── property: year_group
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>└── method: display_details()
 </span></code></pre></div>
-<hr>
+<p>The same structure can then be implemented in Python:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
+</span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Tree</th>
+<th>Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>property: name</code></td>
+<td><code>self.name</code></td>
+</tr>
+<tr>
+<td><code>property: year_group</code></td>
+<td><code>self.year_group</code></td>
+</tr>
+<tr>
+<td><code>method: display_details()</code></td>
+<td><code>def display_details(self):</code></td>
+</tr>
+</tbody>
+</table>
+<p>The class is the definition. It does not represent a particular pupil.</p>
+<h3 id="object">Object</h3>
+<p>An <strong>object</strong> is one particular pupil created using the class.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></code></pre></div>
+<p><code>pupil1</code> refers to the complete object—not just its name or year group.</p>
+<h3 id="property">Property</h3>
+<p>A <strong>property</strong> is one item of data stored inside an object.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>        <span class="c1"># Alice</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>  <span class="c1"># 6</span>
+</span></code></pre></div>
+<p>The object is <code>pupil1</code>. Its properties are <code>name</code> and <code>year_group</code>.</p>
+<h3 id="method">Method</h3>
+<p>A <strong>method</strong> is an action defined by the class and performed through an object. For example, <code>display_details()</code> can display that object's properties.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
+</span></code></pre></div>
+<p>The four terms therefore describe different things:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>In the pupil example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Class</td>
+<td>The definition called <code>Pupil</code></td>
+</tr>
+<tr>
+<td>Object</td>
+<td>One complete pupil, such as <code>pupil1</code></td>
+</tr>
+<tr>
+<td>Property</td>
+<td>One value inside the object, such as <code>name</code></td>
+</tr>
+<tr>
+<td>Method</td>
+<td>An action, such as <code>display_details()</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="one-class-can-create-several-objects">One Class Can Create Several Objects</h2>
+<p>The <code>Pupil</code> class can be used to create several separate pupil objects:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">pupil2</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Ben"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">pupil3</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Cara"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Each object follows the same class definition, but stores its own property values.</p>
+<h2 id="step-1-defining-a-class-with-__init__">Step 1 — Defining a Class with <code>__init__</code></h2>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Add an Initialiser</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p><code>class Pupil:</code> begins the class definition. The indented code underneath belongs to the class.</p>
+<p><code>__init__</code> is a special method that runs automatically when a new object is created. Its job is to give the new object its initial state.</p>
+<p>The name has two underscores before and after <code>init</code>:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>__init__
+</span></code></pre></div>
+<p>It is commonly pronounced “dunder init”, meaning “double-underscore init”. You do not normally call it directly; Python calls it during instantiation.</p>
+<div class="admonition note">
+<p class="admonition-title">Initialiser and Constructor</p>
+<p><code>__init__</code> is commonly called a constructor in introductory Python. More precisely, it initialises an object after Python has created it.</p>
+</div>
+<h2 id="step-2-understanding-self">Step 2 — Understanding <code>self</code></h2>
+<p><code>self</code> refers to the particular object currently using the method.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></code></pre></div>
+<p>The two uses of <code>name</code> have different jobs:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>A parameter containing a value supplied to <code>__init__</code></td>
+</tr>
+<tr>
+<td><code>self.name</code></td>
+<td>A property stored permanently inside this particular object</td>
+</tr>
+</tbody>
+</table>
+<p>The assignment copies the parameter value into the object's property.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>parameter                    object property
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>   name      ──────────────▶    self.name
+</span></code></pre></div>
+<p>The same happens here:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
+</span></code></pre></div>
+<p>Each object receives its own <code>name</code> and <code>year_group</code> properties.</p>
+<div class="admonition important">
+<p class="admonition-title">Is <code>self</code> a Keyword?</p>
+<p><code>self</code> is not a reserved Python keyword, but it is the standard name used for the current object. Using a different name would be confusing and should be avoided.</p>
+</div>
+<h2 id="step-3-instantiating-an-object">Step 3 — Instantiating an Object</h2>
+<p><strong>Instantiation</strong> means creating an object from a class.</p>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Create One Object</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>This statement causes Python to:</p>
+<ol>
+<li>create a new <code>Pupil</code> object</li>
+<li>call its <code>__init__</code> method automatically</li>
+<li>pass <code>"Alice"</code> into the <code>name</code> parameter</li>
+<li>pass <code>6</code> into the <code>year_group</code> parameter</li>
+<li>store the completed object in <code>pupil1</code></li>
+</ol>
+<p>Although <code>__init__</code> declares three parameters, only two arguments are written when the object is created:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="o">...</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Python supplies <code>self</code> automatically. In this call, <code>self</code> refers to the new object that will be stored in <code>pupil1</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value received</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>self</code></td>
+<td>The new <code>Pupil</code> object—supplied automatically</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>"Alice"</code></td>
+</tr>
+<tr>
+<td><code>year_group</code></td>
+<td><code>6</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-4-creating-multiple-objects">Step 4 — Creating Multiple Objects</h2>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Create Separate Objects</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="n">pupil2</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Ben"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Both objects follow the same class definition, but each has its own data:</p>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th><code>name</code></th>
+<th style="text-align: right;"><code>year_group</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pupil1</code></td>
+<td>Alice</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><code>pupil2</code></td>
+<td>Ben</td>
+<td style="text-align: right;">5</td>
+</tr>
+</tbody>
+</table>
+<p>Changing one object does not change the other:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="mi">7</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>  <span class="c1"># 7</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil2</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>  <span class="c1"># 5</span>
+</span></code></pre></div>
+<h2 id="step-5-accessing-properties">Step 5 — Accessing Properties</h2>
+<p>Use <strong>dot notation</strong> to access a property:</p>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Access Object Properties</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">pupil1</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>object.property
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>pupil1.name
+</span></code></pre></div>
+<p>The dot separates the object name from the property being accessed.</p>
+<h2 id="step-6-adding-a-method">Step 6 — Adding a Method</h2>
+<p>A <strong>method</strong> is a subprogram defined inside a class. It describes behaviour belonging to the objects created from that class.</p>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">A Class with a Method</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span>
+<span class="normal"><a href="#__codelineno-19-5">5</a></span>
+<span class="normal"><a href="#__codelineno-19-6">6</a></span>
+<span class="normal"><a href="#__codelineno-19-7">7</a></span>
+<span class="normal"><a href="#__codelineno-19-8">8</a></span>
+<span class="normal"><a href="#__codelineno-19-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2"></a>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6"></a>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Year group:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p><code>display_details()</code> has a <code>self</code> parameter because it needs to access the properties of the object that calls it.</p>
+<p>Call the method using dot notation:</p>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Call an Object Method</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Python automatically passes <code>pupil1</code> into the method as <code>self</code>. Conceptually, the call behaves like:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">Pupil</span><span class="o">.</span><span class="n">display_details</span><span class="p">(</span><span class="n">pupil1</span><span class="p">)</span>
+</span></code></pre></div>
+<p>You should normally use the clearer dot-notation version:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
+</span></code></pre></div>
+<h2 id="how-self-selects-the-correct-object">How <code>self</code> Selects the Correct Object</h2>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">The Same Method, Different Objects</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span>
+<span class="normal"><a href="#__codelineno-23-4">4</a></span>
+<span class="normal"><a href="#__codelineno-23-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2"></a><span class="n">pupil2</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Ben"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3"></a>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5"></a><span class="n">pupil2</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>During the first call, <code>self</code> refers to <code>pupil1</code>, so the method displays Alice's properties. During the second call, <code>self</code> refers to <code>pupil2</code>, so it displays Ben's properties.</p>
+<p>The method is written once but works with whichever object calls it.</p>
 <h2 id="complete-working-example">Complete Working Example</h2>
-<div class="language-python highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-13-10">10</a></span>
-<span class="normal"><a href="#__codelineno-13-11">11</a></span>
-<span class="normal"><a href="#__codelineno-13-12">12</a></span>
-<span class="normal"><a href="#__codelineno-13-13">13</a></span>
-<span class="normal"><a href="#__codelineno-13-14">14</a></span>
-<span class="normal"><a href="#__codelineno-13-15">15</a></span>
-<span class="normal"><a href="#__codelineno-13-16">16</a></span>
-<span class="normal"><a href="#__codelineno-13-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6"></a>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Year group:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10"></a>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11"></a>
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13"></a><span class="n">pupil2</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Ben"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14"></a>
-</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
-</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16"></a><span class="nb">print</span><span class="p">()</span>
-</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17"></a><span class="n">pupil2</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Pupil Class and Objects</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-24-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-24-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-24-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-24-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-24-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-24-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-24-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-24-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-24-10">10</a></span>
+<span class="normal"><a href="#__codelineno-24-11">11</a></span>
+<span class="normal"><a href="#__codelineno-24-12">12</a></span>
+<span class="normal"><a href="#__codelineno-24-13">13</a></span>
+<span class="normal"><a href="#__codelineno-24-14">14</a></span>
+<span class="normal"><a href="#__codelineno-24-15">15</a></span>
+<span class="normal"><a href="#__codelineno-24-16">16</a></span>
+<span class="normal"><a href="#__codelineno-24-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Pupil</span><span class="p">:</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2"></a>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">year_group</span><span class="p">):</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span> <span class="o">=</span> <span class="n">year_group</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6"></a>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Name:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Year group:"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">year_group</span><span class="p">)</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10"></a>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11"></a>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13"></a><span class="n">pupil2</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Ben"</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14"></a>
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16"></a><span class="nb">print</span><span class="p">()</span>
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17"></a><span class="n">pupil2</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
 </span></code></pre></div></td></tr></tbody></table></div>
 <p>Output:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Name: Alice
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>Year group: 6
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>Name: Ben
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>Year group: 5
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>Name: Alice
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>Year group: 6
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>Name: Ben
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>Year group: 5
 </span></code></pre></div>
-<hr>
-<h2 id="why-use-objects">Why Use Objects?</h2>
-<p>Objects help programmers to:</p>
-<ul>
-<li>Organise related data together</li>
-<li>Reuse code efficiently</li>
-<li>Model real-world entities</li>
-<li>Reduce duplication</li>
-<li>Create larger and more maintainable systems</li>
-</ul>
-<p>Objects are used extensively in modern software development.</p>
-<hr>
-<h2 id="common-terminology">Common Terminology</h2>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<h3 id="missing-self-from-a-method-definition">Missing <code>self</code> from a Method Definition</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># Incorrect</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">():</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Instance methods must declare <code>self</code> as their first parameter:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="c1"># Correct</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">display_details</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="forgetting-self-when-creating-a-property">Forgetting <code>self.</code> When Creating a Property</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># This creates only a temporary local variable.</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></code></pre></div>
+<p>To store the value in the object, use:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></code></pre></div>
+<h3 id="calling-a-method-without-parentheses">Calling a Method Without Parentheses</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># Refers to the method but does not call it.</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="c1"># Calls the method.</span>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="n">pupil1</span><span class="o">.</span><span class="n">display_details</span><span class="p">()</span>
+</span></code></pre></div>
+<h3 id="supplying-the-wrong-number-of-arguments">Supplying the Wrong Number of Arguments</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="c1"># Missing the year_group argument.</span>
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="n">pupil1</span> <span class="o">=</span> <span class="n">Pupil</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The arguments supplied during instantiation must match the parameters declared after <code>self</code> in <code>__init__</code>.</p>
+<h2 id="key-vocabulary">Key Vocabulary</h2>
 <table>
 <thead>
 <tr>
@@ -4092,39 +4433,74 @@
 <tbody>
 <tr>
 <td>Class</td>
-<td>Blueprint used to create objects</td>
+<td>A definition or blueprint used to create objects</td>
 </tr>
 <tr>
 <td>Object</td>
-<td>Instance of a class</td>
+<td>One instance of a class</td>
 </tr>
 <tr>
 <td>Property</td>
-<td>Data stored within an object</td>
+<td>Data stored in an object</td>
 </tr>
 <tr>
 <td>Method</td>
-<td>Action performed by an object</td>
+<td>A subprogram defined inside a class</td>
 </tr>
 <tr>
 <td>Instantiation</td>
 <td>Creating an object from a class</td>
 </tr>
 <tr>
-<td>Dot Notation</td>
-<td>Used to access properties and methods</td>
+<td><code>__init__</code></td>
+<td>Special method that initialises a new object</td>
+</tr>
+<tr>
+<td><code>self</code></td>
+<td>A reference to the object currently using a method</td>
+</tr>
+<tr>
+<td>Dot notation</td>
+<td>Syntax used to access an object's properties and methods</td>
 </tr>
 </tbody>
 </table>
-<hr>
-<h2 id="summary">Summary</h2>
-<p>An object is an instance of a class.</p>
-<p>Objects contain:</p>
-<ul>
-<li>Properties that store data</li>
-<li>Methods that perform actions</li>
-</ul>
-<p>Objects allow programmers to represent and manipulate real-world entities within software systems.</p>
+<h2 id="check-your-understanding">Check Your Understanding</h2>
+<p>Study the following program:</p>
+<div class="language-python highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">Game Character</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-32-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-32-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-32-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-32-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-32-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-32-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-32-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-32-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-32-10">10</a></span>
+<span class="normal"><a href="#__codelineno-32-11">11</a></span>
+<span class="normal"><a href="#__codelineno-32-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">GameCharacter</span><span class="p">:</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2"></a>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">health</span><span class="p">):</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">username</span> <span class="o">=</span> <span class="n">username</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">health</span> <span class="o">=</span> <span class="n">health</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6"></a>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">display_status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">health</span><span class="p">)</span>
+</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9"></a>
+</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10"></a>
+</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11"></a><span class="n">player1</span> <span class="o">=</span> <span class="n">GameCharacter</span><span class="p">(</span><span class="s2">"SkyRunner"</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12"></a><span class="n">player1</span><span class="o">.</span><span class="n">display_status</span><span class="p">()</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Answer the following questions:</p>
+<ol>
+<li>Identify the class, object, properties and method used in the program.</li>
+<li>Explain the purpose of <code>__init__</code> in this program.</li>
+<li>Explain what <code>self</code> refers to when the method runs.</li>
+<li>Write the exact output produced by the program.</li>
+<li>Add code that changes the character's health to <code>75</code> and displays the updated details.</li>
+</ol>
+<p><strong>Write your answers in your workbook. Add a printscreen of the completed and tested Python program showing the updated status.</strong></p>
+<p><strong>Next:</strong> <a href="../4.2-encapsulation/">Encapsulation</a></p>
 
 
 

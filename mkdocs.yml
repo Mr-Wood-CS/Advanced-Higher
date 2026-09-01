@@ -14,8 +14,8 @@ nav:
           - Task Three: '1.5.3-task-three.md'
           - Task Four: '1.5.4-task-four.md'
       - Implementation:
-        - Arrays and Records:
-          - Parrallel Arrays: '3.1-parallel-1d-arrays.md'
+        - Data Structures:
+          - Parallel 1D Arrays: '3.1-parallel-1d-arrays.md'
           - Records: '3.2-records.md'
           - Arrays of Records: '3.3-arrays-of-records.md'
           - Two-Dimensional Arrays:
@@ -24,18 +24,18 @@ nav:
             - Traversing and Processing: '3.4.2-traversing-and-processing.md'
             - Adding Rows and Columns: '3.4.3-adding-rows-and-columns.md'
             - Tasks: '3.4.4-2d-array-tasks.md'
-        - Object Orientated Programming:
-          - Object: '4.1-objects.md'
-          - Arrays of Objects: '3.5-arrays-of-objects.md'
-          - Sub-classes: '4.3-sub-class.md'
-          - Encapsulation: '4.4-encapsulation.md'
-          - Polymorphism: '4.5-polymorphism.md'
+        - Object-Oriented Programming:
+          - Classes and Objects: '4.1-objects.md'
+          - Encapsulation: '4.2-encapsulation.md'
+          - Inheritance and Subclasses: '4.3-inheritance-and-subclasses.md'
+          - Polymorphism: '4.4-polymorphism.md'
+          - Arrays of Objects: '4.5-arrays-of-objects.md'
           - Example: '4.6-complete-working-example.md'
         - SQL and Python: '5.1-sqlite-with-python.md'
         - Searches and Sorts:
-          - Binary Search: '6.1-binary-search.md'
-          - Insertation Sort: '6.2-insertation-sort.md'
-          - Bubble Sort: '6.3-bubble-sort.md'
+          - Bubble Sort: '6.1-bubble-sort.md'
+          - Insertion Sort: '6.2-insertion-sort.md'
+          - Binary Search: '6.3-binary-search.md'
     - Program Challenges:
       - Overview: 'program-challenges/index.md'
       - 🔥:
