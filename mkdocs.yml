@@ -18,7 +18,12 @@ nav:
           - Parrallel Arrays: '3.1-parallel-1d-arrays.md'
           - Records: '3.2-records.md'
           - Arrays of Records: '3.3-arrays-of-records.md'
-          - 2d Arrays: '3.4-2d-arrays.md'
+          - Two-Dimensional Arrays:
+            - Overview: '3.4-2d-arrays.md'
+            - Accessing and Updating: '3.4.1-accessing-and-updating.md'
+            - Traversing and Processing: '3.4.2-traversing-and-processing.md'
+            - Adding Rows and Columns: '3.4.3-adding-rows-and-columns.md'
+            - Tasks: '3.4.4-2d-array-tasks.md'
         - Object Orientated Programming:
           - Object: '4.1-objects.md'
           - Arrays of Objects: '3.5-arrays-of-objects.md'
