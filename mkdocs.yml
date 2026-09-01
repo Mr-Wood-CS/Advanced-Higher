@@ -31,6 +31,9 @@ nav:
           - Polymorphism: '4.4-polymorphism.md'
           - Arrays of Objects: '4.5-arrays-of-objects.md'
           - Example: '4.6-complete-working-example.md'
+          - Putting It Together:
+            - Overview: '4.7-putting-oop-together.md'
+            - School Library Manager: '4.7.1-school-library-manager.md'
         - SQL and Python: '5.1-sqlite-with-python.md'
         - Searches and Sorts:
           - Bubble Sort: '6.1-bubble-sort.md'
