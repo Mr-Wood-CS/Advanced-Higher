@@ -1,0 +1,157 @@
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px; /* Adjust to your preferred roundness */
+  max-width: 800px;      /* Set to your preferred width */
+  
+}
+
+a.back-button.md-button {
+  position: fixed;
+  top: 5rem;
+  left: 1rem;
+  z-index: 9999;
+  background: transparent;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+  text-decoration: none;
+}
+
+a.back-button.md-button:focus,
+a.back-button.md-button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+a.back-button.md-button:hover {
+  background: transparent !important;
+  color: inherit; /* Optional: keep text color unchanged */
+  box-shadow: none !important;
+}
+
+.admonition-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.admonition-container .admonition {
+  flex: 1;
+  min-width: 300px; /* Optional: Controls how small each can shrink */
+}
+
+.custom-inline-nav {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.custom-inline-nav a {
+  text-decoration: none;
+  color: var(--md-primary-fg-color); /* uses your theme’s primary link color */
+  margin: 0 0.5rem;
+}
+
+.custom-inline-nav a:hover {
+  text-decoration: underline;
+}
+
+.md-typeset .tabbed-set {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+
+
+
+
+.testing {
+  border-collapse: collapse; /* neat borders */
+  width: 80%;                /* make table a bit wider */
+  margin: 20px auto;          /* center the table */
+ 
+  border: 2px solid;
+}
+
+.testing th,
+.testing td {
+  border: 1px solid #333; /* borders for each cell */
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.testing th {
+  background-color: orange; /* header background */
+  color: black;             /* header text */
+}
+
+.md-typeset .object-diagram {
+  display: block;
+  margin: 1.4em auto;
+  max-width: 30rem;
+}
+
+.object-diagram__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.object-diagram__item {
+  flex: 0 1 11.5rem;
+  min-width: 0;
+}
+
+.md-typeset .object-diagram__label {
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.object-diagram__box {
+  border: 1px solid var(--md-default-fg-color--light);
+  background: var(--md-default-bg-color);
+}
+
+.object-diagram__name {
+  border-bottom: 1px solid var(--md-default-fg-color--light);
+  padding: 0.35rem 0.7rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.object-diagram__properties {
+  padding: 0.4rem 0.7rem;
+  overflow-wrap: anywhere;
+}
+
+.object-diagram__properties + .object-diagram__properties {
+  border-top: 1px solid var(--md-default-fg-color--light);
+}
+
+.object-diagram__properties strong {
+  padding: 0 0.18em;
+  background: var(--md-typeset-mark-color);
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .object-diagram figcaption {
+  max-width: 26rem;
+  margin-top: 0.6rem;
+  font-style: normal;
+}
+
+.md-typeset .object-diagram--array {
+  width: 100%;
+}
+
+.object-diagram--array .object-diagram__item {
+  flex-basis: 9rem;
+}
