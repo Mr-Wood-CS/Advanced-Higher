@@ -14,31 +14,40 @@ nav:
           - Task Three: '1.5.3-task-three.md'
           - Task Four: '1.5.4-task-four.md'
       - Implementation:
+        - Object-Oriented Programming: 
+          - Stage 1 - Objects and Properties:
+            - Objects: '01-SDD/03-Implementation/01-OOP/1.1-objects.md'
+            - Properties: '01-SDD/03-Implementation/01-OOP/1.2-properties.md'
+            - Working with Multiple Objects: '01-SDD/03-Implementation/01-OOP/1.3-multiple-objects.md'
+          - Stage 2 - Building and Using Objects:
+            - Classes: '01-SDD/03-Implementation/01-OOP/1.4-classes.md'
+            - Instantiation: '01-SDD/03-Implementation/01-OOP/1.5-instantiation.md'
+            - Methods: '01-SDD/03-Implementation/01-OOP/1.6-methods.md'
+          - Stage 3 - Encapsulation: '01-SDD/03-Implementation/01-OOP/1.7-encapsulation.md'
+          - Stage 4 – Inheritance and Subclasses:
+            - Inheritance: '01-SDD/03-Implementation/01-OOP/1.8-inheritance.md'
+            - Subclasses: '01-SDD/03-Implementation/01-OOP/1.9-subclasses.md'
+          - Stage 5 – Polymorphism: '01-SDD/03-Implementation/01-OOP/1.10-polymorphism.md'
         - Data Structures:
-          - Parallel 1D Arrays: '3.1-parallel-1d-arrays.md'
-          - Records: '3.2-records.md'
-          - Arrays of Records: '3.3-arrays-of-records.md'
+          - Arrays of Objects:
+            - Introduction: '01-SDD/03-Implementation/02-data-structures/01-Arrays-of-Objects/1.1-arrays-of-objects.md'
+            - Creating an Array of Objects: '01-SDD/03-Implementation/02-data-structures/01-Arrays-of-Objects/1.1.1-creating-an-array-of-objects.md'
+            - Accessing and Updating Objects: '01-SDD/03-Implementation/02-data-structures/01-Arrays-of-Objects/1.1.2-accessing-and-updating-objects.md'
+            - Processing Arrays of Objects: '01-SDD/03-Implementation/02-data-structures/01-Arrays-of-Objects/1.1.3-processing-arrays-of-objects.md'
+            - Arrays of Objects and Polymorphism: '01-SDD/03-Implementation/02-data-structures/01-Arrays-of-Objects/1.1.4-arrays-of-objects-and-polymorphism.md'
+          - Parallel 1D Arrays: '01-SDD/03-Implementation/02-data-structures/02-parallel-1d-arrays.md'
+          - Records: '01-SDD/03-Implementation/02-data-structures/03-records.md'
+          - Arrays of Records: '01-SDD/03-Implementation/02-data-structures/04-arrays-of-records.md'
           - Two-Dimensional Arrays:
-            - Overview: '3.4-2d-arrays.md'
+            - Overview: '01-SDD/03-Implementation/02-data-structures/05-2d-arrays.md'
             - Accessing and Updating: '3.4.1-accessing-and-updating.md'
             - Traversing and Processing: '3.4.2-traversing-and-processing.md'
             - Adding Rows and Columns: '3.4.3-adding-rows-and-columns.md'
-            - Tasks: '3.4.4-2d-array-tasks.md'
-        - Object-Oriented Programming:
-          - Classes and Objects: '4.1-objects.md'
-          - Encapsulation: '4.2-encapsulation.md'
-          - Inheritance and Subclasses: '4.3-inheritance-and-subclasses.md'
-          - Polymorphism: '4.4-polymorphism.md'
-          - Arrays of Objects: '4.5-arrays-of-objects.md'
-          - Example: '4.6-complete-working-example.md'
-          - Putting It Together:
-            - Overview: '4.7-putting-oop-together.md'
-            - School Library Manager: '4.7.1-school-library-manager.md'
         - SQL and Python: '5.1-sqlite-with-python.md'
         - Searches and Sorts:
-          - Bubble Sort: '6.1-bubble-sort.md'
-          - Insertion Sort: '6.2-insertion-sort.md'
-          - Binary Search: '6.3-binary-search.md'
+          - Bubble Sort: '01-SDD/03-Implementation/03-standard-algorithms/01-00-bubble-sort.md'
+          - Insertion Sort: '01-SDD/03-Implementation/03-standard-algorithms/02-00-insertion-sort.md'
+          - Binary Search: '01-SDD/03-Implementation/03-standard-algorithms/03-00-binary-search.md'
     - Program Challenges:
       - Overview: 'program-challenges/index.md'
       - 🔥:

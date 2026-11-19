@@ -1,0 +1,101 @@
+# Records
+
+!!! info "What You Need to Know"
+
+    You must be able to describe, exemplify and implement records.
+
+## What Is a Record?
+
+A **record** stores several related fields about one entity. Its fields can have different data types.
+
+For example, one pupil record could contain:
+
+| Field | Data type | Example |
+|---|---|---|
+| `name` | String | `"Peter"` |
+| `age` | Integer | `17` |
+| `registration_group` | String | `"R1"` |
+
+This differs from an array, whose elements normally represent values of the same type and purpose.
+
+## Defining a Record in Python
+
+Python does not have a separate `record` keyword. A dataclass provides a clear way to define a record-like structure.
+
+```python title="Define a Pupil Record" linenums="1"
+from dataclasses import dataclass
+
+
+@dataclass
+class PupilRecord:
+    name: str
+    age: int
+    registration_group: str
+```
+
+The definition specifies the name and data type of every field.
+
+!!! note "Records and Objects"
+
+    Python implements this record using a class, but it is being used only to group data. Object-oriented classes containing constructors, private properties and methods are introduced later in the course.
+
+## Creating a Record
+
+```python title="Create One Record" linenums="1"
+pupil = PupilRecord("Peter", 17, "R1")
+```
+
+The values are supplied in the same order as the fields in the record definition.
+
+## Accessing Fields
+
+Use dot notation to access an individual field:
+
+```python title="Access Record Fields" linenums="1"
+print(pupil.name)
+print(pupil.age)
+print(pupil.registration_group)
+```
+
+## Updating a Field
+
+```python title="Update a Record" linenums="1"
+pupil.registration_group = "R2"
+print(pupil.registration_group)
+```
+
+Only the selected field is changed.
+
+## Complete Example
+
+```python title="One Pupil Record" linenums="1"
+from dataclasses import dataclass
+
+
+@dataclass
+class PupilRecord:
+    name: str
+    age: int
+    registration_group: str
+
+
+pupil = PupilRecord("Peter", 17, "R1")
+pupil.registration_group = "R2"
+
+print("Name:", pupil.name)
+print("Age:", pupil.age)
+print("Registration group:", pupil.registration_group)
+```
+
+## Why Use a Record?
+
+A record:
+
+- keeps related fields together
+- gives each field a meaningful name
+- supports different data types
+- is easier to maintain than several separate variables
+
+One record stores one entity. To store several pupils, use an array of records.
+
+**Next:** [Arrays of Records](04-arrays-of-records.md)

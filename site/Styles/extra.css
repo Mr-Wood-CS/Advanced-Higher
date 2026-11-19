@@ -89,3 +89,69 @@ a.back-button.md-button:hover {
   background-color: orange; /* header background */
   color: black;             /* header text */
 }
+
+.md-typeset .object-diagram {
+  display: block;
+  margin: 1.4em auto;
+  max-width: 30rem;
+}
+
+.object-diagram__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.object-diagram__item {
+  flex: 0 1 11.5rem;
+  min-width: 0;
+}
+
+.md-typeset .object-diagram__label {
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.object-diagram__box {
+  border: 1px solid var(--md-default-fg-color--light);
+  background: var(--md-default-bg-color);
+}
+
+.object-diagram__name {
+  border-bottom: 1px solid var(--md-default-fg-color--light);
+  padding: 0.35rem 0.7rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.object-diagram__properties {
+  padding: 0.4rem 0.7rem;
+  overflow-wrap: anywhere;
+}
+
+.object-diagram__properties + .object-diagram__properties {
+  border-top: 1px solid var(--md-default-fg-color--light);
+}
+
+.object-diagram__properties strong {
+  padding: 0 0.18em;
+  background: var(--md-typeset-mark-color);
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .object-diagram figcaption {
+  max-width: 26rem;
+  margin-top: 0.6rem;
+  font-style: normal;
+}
+
+.md-typeset .object-diagram--array {
+  width: 100%;
+}
+
+.object-diagram--array .object-diagram__item {
+  flex-basis: 9rem;
+}

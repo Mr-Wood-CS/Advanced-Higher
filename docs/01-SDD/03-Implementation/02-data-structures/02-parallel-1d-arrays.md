@@ -1,0 +1,91 @@
+# Parallel 1D Arrays
+
+!!! info "What You Need to Know"
+
+    You must be able to describe, exemplify and implement parallel one-dimensional arrays.
+
+## What Are Parallel Arrays?
+
+Parallel arrays are two or more 1D arrays in which values at the same index are related.
+
+```python title="Pupil Names and Marks" linenums="1"
+pupil_names = ["Peter", "Laura", "Marie"]
+pupil_marks = [20, 21, 23]
+```
+
+| Index | `pupil_names` | `pupil_marks` |
+|---:|---|---:|
+| `0` | Peter | 20 |
+| `1` | Laura | 21 |
+| `2` | Marie | 23 |
+
+Peter's name and mark are both at index `0`. Marie's details are both at index `2`.
+
+!!! warning "Keep the Arrays in Step"
+
+    The arrays must have the same length, and their values must remain in matching positions. If one array is reordered, the corresponding elements in every parallel array must also move.
+
+## Accessing Related Values
+
+Use the same index with each array:
+
+```python title="Display One Pupil" linenums="1"
+index = 2
+
+print("Name:", pupil_names[index])
+print("Mark:", pupil_marks[index])
+```
+
+## Processing Parallel Arrays
+
+An index-controlled loop allows the program to access matching elements:
+
+```python title="Display All Pupils" linenums="1"
+for index in range(len(pupil_names)):
+    print(pupil_names[index], pupil_marks[index])
+```
+
+Before processing, the program can check that the arrays have matching lengths:
+
+```python
+if len(pupil_names) == len(pupil_marks):
+    for index in range(len(pupil_names)):
+        print(pupil_names[index], pupil_marks[index])
+else:
+    print("The parallel arrays do not match.")
+```
+
+## Reading Parallel Data from a CSV File
+
+Suppose `School-Reg.csv` contains:
+
+```text
+Peter,17,R1
+Laura,16,R2
+Marie,17,R1
+```
+
+```python title="Load Parallel Arrays" linenums="1"
+names = []
+ages = []
+registration_groups = []
+
+with open("School-Reg.csv", "r") as file:
+    for line in file:
+        data = line.strip().split(",")
+
+        names.append(data[0])
+        ages.append(int(data[1]))
+        registration_groups.append(data[2])
+
+for index in range(len(names)):
+    print(names[index], ages[index], registration_groups[index])
+```
+
+The age is converted to an integer as it is loaded. The `with` statement closes the file automatically.
+
+## Choosing an Appropriate Structure
+
+Parallel arrays are valid when a problem requires them, but they become difficult to manage as more related fields are added. A record keeps all the data for one entity together and is often a clearer solution.
+
+**Next:** [Records](03-records.md)
